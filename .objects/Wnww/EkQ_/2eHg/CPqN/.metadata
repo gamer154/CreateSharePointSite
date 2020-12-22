@@ -1,0 +1,13 @@
+﻿{
+  "Id": "CPqNyWvRA02kxAK31I50rw",
+  "Reference": "x53wdMOYU0i6wyj3bGLciw/CPqNyWvRA02kxAK31I50rw",
+  "ParentRef": "x53wdMOYU0i6wyj3bGLciw/2eHgza-EOUC-U0WRlevs8A",
+  "Name": "MainMenuBtn",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Created": "2020-12-18T21:57:51.9608865Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=20.10.4.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2020-12-18T21:57:51.9608865Z"
+}

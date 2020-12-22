@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-16"?>
+<TargetAnchorable BrowserURL="https://uipath.sharepoint.com/_layouts/15/CreateGroup.aspx" ContentHash="MdBJZ5VOgE-Yv_vKTZZG9w" DesignTimeRectangle="1508, 869, 80, 32" ElementType="Button" FriendlyName="'Next'" FullSelectorArgument="&lt;webctrl src='https://uipath.sharepoint.com/_layouts/15/CreateGroup.aspx' tag='IFRAME' /&gt;&lt;webctrl aaname='Next' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl src='https://uipath.sharepoint.com/_layouts/15/CreateGroup.aspx' tag='IFRAME' /&gt;&lt;webctrl aaname='Next' tag='BUTTON' type='' check:text='Next' /&gt;" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SharePoint' /&gt;" SearchSteps="Selector" Text="Next" TextMethod="AttributeText" TextSelector="&lt;webctrl tag='BUTTON' type='' /&gt;" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TargetAnchorable.Anchors>
+    <scg:List x:TypeArguments="ITarget" Capacity="4">
+      <Target DesignTimeRectangle="1534, 875, 29, 19" ElementType="Text" FriendlyName="'Next'" FullSelectorArgument="&lt;webctrl src='https://uipath.sharepoint.com/_layouts/15/CreateGroup.aspx' tag='IFRAME' /&gt;&lt;webctrl aaname='Next' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl src='https://uipath.sharepoint.com/_layouts/15/CreateGroup.aspx' tag='IFRAME' /&gt;&lt;webctrl aaname='Next' tag='SPAN' type='' check:text='Next' /&gt;" SearchSteps="FuzzySelector, Image" Text="Next" TextMethod="AttributeText" TextSelector="&lt;webctrl tag='SPAN' type='' /&gt;">
+        <imageRef attrName="ImageBase64" xmlns="">1pl6FN5yIrkCIlgEUlR0-8g</imageRef>
+      </Target>
+    </scg:List>
+  </TargetAnchorable.Anchors>
+  <imageRef attrName="ImageBase64" xmlns="">0apIbvvv8IUWQVdqc4Guuuw</imageRef>
+  <imageRef attrName="InformativeScreenshot" originalValue="b0602889a1bdb8020fd7f9c322baf898.png" xmlns="">056RPjjDV4UarPQWHDKxKRg</imageRef>
+</TargetAnchorable>

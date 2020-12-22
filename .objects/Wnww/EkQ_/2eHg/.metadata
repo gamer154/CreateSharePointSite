@@ -1,0 +1,15 @@
+﻿{
+  "Id": "2eHgza-EOUC-U0WRlevs8A",
+  "Reference": "x53wdMOYU0i6wyj3bGLciw/2eHgza-EOUC-U0WRlevs8A",
+  "ParentRef": "x53wdMOYU0i6wyj3bGLciw/EkQ_gjBXy0yUfBXTjddTVg",
+  "Name": "Chrome: Technical Account Management - Home",
+  "Type": "Screen",
+  "Created": "2020-12-18T21:57:51.7658928Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=20.10.4.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2020-12-21T15:28:05.1447041Z",
+  "UpdatedBy": [
+    "UiPath.Platform, Version=20.10.4.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

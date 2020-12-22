@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-16"?>
+<TargetAnchorable BrowserURL="https://uipath.sharepoint.com/_layouts/15/CreateGroup.aspx" ContentHash="0cJdaaeKKky4p7rjNLxv9Q" DesignTimeRectangle="1508, 545, 80, 32" ElementType="Button" FriendlyName="'Finish'" FullSelectorArgument="&lt;webctrl src='https://uipath.sharepoint.com/_layouts/15/CreateGroup.aspx' tag='IFRAME' /&gt;&lt;webctrl tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl src='https://uipath.sharepoint.com/_layouts/15/CreateGroup.aspx' tag='IFRAME' /&gt;&lt;webctrl tag='BUTTON' type='' aaname='Finish' check:text='Finish' /&gt;" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SharePoint' /&gt;" SearchSteps="FuzzySelector, Image" Text="Finish" TextMethod="AttributeText" TextSelector="&lt;webctrl tag='BUTTON' type='' /&gt;" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TargetAnchorable.Anchors>
+    <scg:List x:TypeArguments="ITarget" Capacity="4">
+      <Target DesignTimeRectangle="1530, 551, 35, 19" ElementType="Text" FriendlyName="'Finish'" FullSelectorArgument="&lt;webctrl src='https://uipath.sharepoint.com/_layouts/15/CreateGroup.aspx' tag='IFRAME' /&gt;&lt;webctrl aaname='Finish' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl src='https://uipath.sharepoint.com/_layouts/15/CreateGroup.aspx' tag='IFRAME' /&gt;&lt;webctrl aaname='Finish' tag='SPAN' type='' check:text='Finish' /&gt;" SearchSteps="FuzzySelector, Image" Text="Finish" TextMethod="AttributeText" TextSelector="&lt;webctrl tag='SPAN' type='' /&gt;">
+        <imageRef attrName="ImageBase64" xmlns="">1EAefTFsgDE6DvdZuLNu6Fg</imageRef>
+      </Target>
+    </scg:List>
+  </TargetAnchorable.Anchors>
+  <imageRef attrName="ImageBase64" xmlns="">0Uy4FO0i1AE2ELIuPSaA1Eg</imageRef>
+  <imageRef attrName="InformativeScreenshot" originalValue="9815381bae360ab52b262623fe444773.png" xmlns="">0wyidKLcEtUq1Jxp53XKqQA</imageRef>
+</TargetAnchorable>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-16"?>
+<TargetAnchorable BrowserURL="https://uipath.sharepoint.com/_layouts/15/CreateGroup.aspx" ContentHash="gjghFOS1iE-N6ZJTLqOTnw" DesignTimeRectangle="1508, 565, 378, 80" ElementType="InputBox" FriendlyName="'TEXTAREA  43e35fde-f287…'" FullSelectorArgument="&lt;webctrl src='https://uipath.sharepoint.com/_layouts/15/CreateGroup.aspx' tag='IFRAME' /&gt;&lt;webctrl tag='TEXTAREA' /&gt;" FuzzySelectorArgument="&lt;webctrl src='https://uipath.sharepoint.com/_layouts/15/CreateGroup.aspx' tag='IFRAME' /&gt;&lt;webctrl tag='TEXTAREA' type='' aaname='Site description' /&gt;" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SharePoint' /&gt;" SearchSteps="Selector" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TargetAnchorable.Anchors>
+    <scg:List x:TypeArguments="ITarget" Capacity="4">
+      <Target DesignTimeRectangle="1508, 536, 378, 29" ElementType="Text" FriendlyName="'Site description'" FullSelectorArgument="&lt;webctrl src='https://uipath.sharepoint.com/_layouts/15/CreateGroup.aspx' tag='IFRAME' /&gt;&lt;webctrl aaname='Site description' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl src='https://uipath.sharepoint.com/_layouts/15/CreateGroup.aspx' tag='IFRAME' /&gt;&lt;webctrl aaname='Site description' tag='LABEL' type='' check:text='Site description' /&gt;" SearchSteps="FuzzySelector, Image" Text="Site description" TextMethod="AttributeText" TextSelector="&lt;webctrl tag='LABEL' type='' /&gt;">
+        <imageRef attrName="ImageBase64" xmlns="">1z5qA-p9ujUSqtSniZh9m2A</imageRef>
+      </Target>
+    </scg:List>
+  </TargetAnchorable.Anchors>
+  <imageRef attrName="ImageBase64" xmlns="">0lUCpjRzFgEaloiVBJj42Jw</imageRef>
+  <imageRef attrName="InformativeScreenshot" originalValue="846acf2d9413569ffb96ac428968d32d.png" xmlns="">0Rr7nkCX_GU266ErTAfl26Q</imageRef>
+</TargetAnchorable>

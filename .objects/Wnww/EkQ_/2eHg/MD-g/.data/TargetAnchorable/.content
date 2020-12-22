@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-16"?>
+<TargetAnchorable BrowserURL="https://uipath.sharepoint.com/_layouts/15/CreateGroup.aspx" ContentHash="aiMyBV4Bs02Hrr4Hi3Kgpg" DesignTimeRectangle="1509, 405, 376, 32" ElementType="InputBox" FriendlyName="'INPUT  PeoplePicker-tex…'" FullSelectorArgument="&lt;webctrl src='https://uipath.sharepoint.com/_layouts/15/CreateGroup.aspx' tag='IFRAME' /&gt;&lt;webctrl idx='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl src='https://uipath.sharepoint.com/_layouts/15/CreateGroup.aspx' tag='IFRAME' /&gt;&lt;webctrl type='email' tag='INPUT' aaname='' /&gt;" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SharePoint' /&gt;" SearchSteps="FuzzySelector, Image" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TargetAnchorable.Anchors>
+    <scg:List x:TypeArguments="ITarget" Capacity="4">
+      <Target DesignTimeRectangle="1508, 375, 378, 29" ElementType="Text" FriendlyName="'Add additional owners'" FullSelectorArgument="&lt;webctrl src='https://uipath.sharepoint.com/_layouts/15/CreateGroup.aspx' tag='IFRAME' /&gt;&lt;webctrl aaname='Add additional owners' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl src='https://uipath.sharepoint.com/_layouts/15/CreateGroup.aspx' tag='IFRAME' /&gt;&lt;webctrl aaname='Add additional owners' tag='LABEL' type='' check:text='Add additional owners' /&gt;" SearchSteps="FuzzySelector, Image" Text="Add additional owners" TextMethod="AttributeText" TextSelector="&lt;webctrl tag='LABEL' type='' /&gt;">
+        <imageRef attrName="ImageBase64" xmlns="">1Swgm0ffrpk-9zD7CHNS2SQ</imageRef>
+      </Target>
+    </scg:List>
+  </TargetAnchorable.Anchors>
+  <imageRef attrName="ImageBase64" xmlns="">0QU87sTsPhU2ahc2wITC6hQ</imageRef>
+  <imageRef attrName="InformativeScreenshot" originalValue="8e9afa5f6d2cd5c2f8332f576a51ad03.png" xmlns="">0qRQHio8vWUq711CFSUsj6w</imageRef>
+</TargetAnchorable>

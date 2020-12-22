@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-16"?>
+<TargetApp BrowserType="Chrome" ContentHash="BF6a1ItrQk-dDyd2DUQ0zw" Selector="&lt;html app='chrome.exe' title='SharePoint'/&gt;" Url="https://uipath.sharepoint.com/_layouts/15/sharepoint.aspx" xmlns="http://schemas.uipath.com/workflow/activities/uix">
+  <imageRef attrName="IconBase64" xmlns="">0clkTj2wHfUucA1vFY71Bpg</imageRef>
+  <imageRef attrName="InformativeScreenshot" originalValue="af8ad63fb030e41af02038963302099a.png" xmlns="">0G8mSUr2eBkSZGKr-ii3tRw</imageRef>
+</TargetApp>

@@ -1,0 +1,14 @@
+﻿{
+  "Id": "WnwwvKy3TUCGz9OzggOINQ",
+  "Reference": "x53wdMOYU0i6wyj3bGLciw/WnwwvKy3TUCGz9OzggOINQ",
+  "Name": "Chrome: Technical Account Management - Home app",
+  "Type": "App",
+  "Created": "2020-12-18T21:57:51.6918861Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=20.10.4.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2020-12-21T15:28:05.0937Z",
+  "UpdatedBy": [
+    "UiPath.Platform, Version=20.10.4.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

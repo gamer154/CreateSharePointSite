@@ -1,0 +1,13 @@
+﻿{
+  "Id": "k_n3toetHkSOmc2ENvBtJQ",
+  "Reference": "x53wdMOYU0i6wyj3bGLciw/k_n3toetHkSOmc2ENvBtJQ",
+  "ParentRef": "x53wdMOYU0i6wyj3bGLciw/2eHgza-EOUC-U0WRlevs8A",
+  "Name": "Another group",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Created": "2020-12-21T14:21:11.0844462Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=20.10.4.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2020-12-21T14:21:11.0844462Z"
+}

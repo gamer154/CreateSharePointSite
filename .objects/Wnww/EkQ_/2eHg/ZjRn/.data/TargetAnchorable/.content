@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-16"?>
+<TargetAnchorable BrowserURL="https://uipath.sharepoint.com/sites/TechnicalAccountManagement" ContentHash="7w97bvsjGUygxgEmEn1jyw" DesignTimeRectangle="63, 368, 66, 19" ElementType="Text" FriendlyName="'SharePoint'" FullSelectorArgument="&lt;webctrl aaname='SharePoint' parentid='O365_AppTile_Sites' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='SharePoint' parentid='O365_AppTile_Sites' tag='SPAN' type='' check:text='SharePoint' /&gt;" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Technical Account Management - Home' /&gt;" SearchSteps="Selector" Text="SharePoint" TextMethod="AttributeText" TextSelector="&lt;webctrl tag='SPAN' type='' /&gt;" xmlns="http://schemas.uipath.com/workflow/activities/uix">
+  <imageRef attrName="ImageBase64" xmlns="">0000y4iSWuk-N4YMjZSncRw</imageRef>
+  <imageRef attrName="InformativeScreenshot" originalValue="7f3d322e1f9e641d4588601052dfd3c1.png" xmlns="">0iuhfzNB_iUycOjnFa8bqhg</imageRef>
+</TargetAnchorable>

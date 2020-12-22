@@ -1,0 +1,13 @@
+﻿{
+  "Id": "ZjRnqvbGAEynk54Ng1yyhQ",
+  "Reference": "x53wdMOYU0i6wyj3bGLciw/ZjRnqvbGAEynk54Ng1yyhQ",
+  "ParentRef": "x53wdMOYU0i6wyj3bGLciw/2eHgza-EOUC-U0WRlevs8A",
+  "Name": "SharePoint",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Created": "2020-12-18T21:57:52.0768889Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=20.10.4.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2020-12-18T21:57:52.0768889Z"
+}

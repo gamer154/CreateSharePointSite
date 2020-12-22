@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-16"?>
+<TargetAnchorable BrowserURL="https://uipath.sharepoint.com/_layouts/15/CreateGroup.aspx" ContentHash="Ck_9vZ4riEy2LK9vMpftsg" DesignTimeRectangle="1509, 484, 376, 32" ElementType="InputBox" FriendlyName="'INPUT  PeoplePicker-tex…'" FullSelectorArgument="&lt;webctrl src='https://uipath.sharepoint.com/_layouts/15/CreateGroup.aspx' tag='IFRAME' /&gt;&lt;webctrl idx='2' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl src='https://uipath.sharepoint.com/_layouts/15/CreateGroup.aspx' tag='IFRAME' /&gt;&lt;webctrl type='email' tag='INPUT' aaname='' /&gt;" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SharePoint' /&gt;" SearchSteps="FuzzySelector, Image" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TargetAnchorable.Anchors>
+    <scg:List x:TypeArguments="ITarget" Capacity="4">
+      <Target DesignTimeRectangle="1508, 454, 378, 29" ElementType="Text" FriendlyName="'Add members'" FullSelectorArgument="&lt;webctrl src='https://uipath.sharepoint.com/_layouts/15/CreateGroup.aspx' tag='IFRAME' /&gt;&lt;webctrl aaname='Add members' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl src='https://uipath.sharepoint.com/_layouts/15/CreateGroup.aspx' tag='IFRAME' /&gt;&lt;webctrl aaname='Add members' tag='LABEL' type='' check:text='Add members' /&gt;" SearchSteps="FuzzySelector, Image" Text="Add members" TextMethod="AttributeText" TextSelector="&lt;webctrl tag='LABEL' type='' /&gt;">
+        <imageRef attrName="ImageBase64" xmlns="">1-zLV_cHzDkaJIPzszlJxRw</imageRef>
+      </Target>
+    </scg:List>
+  </TargetAnchorable.Anchors>
+  <imageRef attrName="ImageBase64" xmlns="">0kP0ZowvLI0iVRS85jWGY_Q</imageRef>
+  <imageRef attrName="InformativeScreenshot" originalValue="3d51b4604f57a5a3ebc30f7d6c102d1d.png" xmlns="">0FKfTr2rCh0CDNMg-o2pbCQ</imageRef>
+</TargetAnchorable>

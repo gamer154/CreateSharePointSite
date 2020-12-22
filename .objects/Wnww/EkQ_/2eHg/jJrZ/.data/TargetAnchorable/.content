@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-16"?>
+<TargetAnchorable BrowserURL="https://uipath.sharepoint.com/_layouts/15/sharepoint.aspx" ContentHash="weRL6b0W1k257fLUc4xfCw" DesignTimeRectangle="37, 128, 97, 38" ElementType="Text" FriendlyName="'Create site'" FullSelectorArgument="&lt;webctrl parentid='SPHomeNavBar' tag='SPAN' idx='2' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='SPHomeNavBar' tag='SPAN' type='' aaname='' check:text='Create site' /&gt;" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SharePoint' /&gt;" SearchSteps="Selector" Text="Create site" TextMethod="AttributeText" TextSelector="&lt;webctrl tag='SPAN' type='' /&gt;" xmlns="http://schemas.uipath.com/workflow/activities/uix">
+  <imageRef attrName="ImageBase64" xmlns="">0RFEPTTHPC0alOcmq8P4uJg</imageRef>
+  <imageRef attrName="InformativeScreenshot" originalValue="044345784087d5af6cad0e6c3e11d50a.png" xmlns="">0bJQA4shprkSFxuMbxHK7QA</imageRef>
+</TargetAnchorable>

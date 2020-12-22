@@ -1,0 +1,13 @@
+﻿{
+  "Id": "lyq2333M9EG1IXgQgmE22Q",
+  "Reference": "x53wdMOYU0i6wyj3bGLciw/lyq2333M9EG1IXgQgmE22Q",
+  "ParentRef": "x53wdMOYU0i6wyj3bGLciw/2eHgza-EOUC-U0WRlevs8A",
+  "Name": "Team siteShare",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Created": "2020-12-18T22:03:37.3845423Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=20.10.4.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2020-12-18T22:03:37.3845423Z"
+}

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-16"?>
+<TargetAnchorable BrowserURL="https://uipath.sharepoint.com/sites/shotst177?market=en-US" ContentHash="ZiUr0u6GyECP_e9OfASgnw" DesignTimeRectangle="1855, 236, 55, 44" FriendlyName="'Edit'" FullSelectorArgument="&lt;webctrl idx='1' parentid='spCommandBar' parentname='Edit' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='spCommandBar' parentname='Edit' tag='SPAN' aaname='' check:text='Edit' /&gt;" ScopeSelectorArgument="&lt;html app='chrome.exe' title='shotst1 - Home' /&gt;" SearchSteps="FuzzySelector, Image" Text="Edit" TextMethod="AttributeText" TextSelector="&lt;webctrl type='' tag='SPAN' /&gt;" xmlns="http://schemas.uipath.com/workflow/activities/uix">
+  <imageRef attrName="ImageBase64" xmlns="">0gB-MYK5j60Oz1PWdxey5Nw</imageRef>
+  <imageRef attrName="InformativeScreenshot" originalValue="82732fb3d10579af6bc86404138d0474.png" xmlns="">0-Bqw9W9OZ0qcGs1KFySHfw</imageRef>
+</TargetAnchorable>
