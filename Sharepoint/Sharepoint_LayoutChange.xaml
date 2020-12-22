@@ -1,11 +1,19 @@
 <Activity mc:Ignorable="sap sap2010" x:Class="Sharepoint_LayoutChange" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="out_Exception" Type="OutArgument(x:String)" />
+    <x:Property Name="linkLicenses" Type="InArgument(x:String)" />
+    <x:Property Name="linkSalesforce" Type="InArgument(x:String)" />
+    <x:Property Name="linkWrike" Type="InArgument(x:String)" />
+    <x:Property Name="linkWeb" Type="InArgument(x:String)" />
+    <x:Property Name="dateTPPRenewal" Type="InArgument(s:DateTime)" />
+    <x:Property Name="linkSFDCPPR" Type="InArgument(x:String)" />
+    <x:Property Name="dateTPlatform" Type="InArgument(s:DateTime)" />
+    <x:Property Name="linkSFDCPlatform" Type="InArgument(x:String)" />
   </x:Members>
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1105,718</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1105,1095</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Sharepoint_LayoutChange_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -65,21 +73,21 @@
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Sharepoint_LayoutChange" sap:VirtualizedContainerService.HintSize="476,613" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Sharepoint_LayoutChange" sap:VirtualizedContainerService.HintSize="536,990" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="434,521" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="494,898" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
-        <Sequence sap:VirtualizedContainerService.HintSize="242,376" sap2010:WorkflowViewState.IdRef="Sequence_5">
+        <Sequence sap:VirtualizedContainerService.HintSize="456,666" sap2010:WorkflowViewState.IdRef="Sequence_5">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Sequence DisplayName="Edit and Move Quick Links and Documents" sap:VirtualizedContainerService.HintSize="200,68" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Edit and Move Quick Links and Documents" sap:VirtualizedContainerService.HintSize="414,68" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -92,98 +100,104 @@
               </ui:InvokeWorkflowFile.Arguments>
             </ui:InvokeWorkflowFile>
           </Sequence>
-          <Sequence DisplayName="Add Countdown Timers" sap:VirtualizedContainerService.HintSize="200,68" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="Add Countdown Timers" sap:VirtualizedContainerService.HintSize="414,358" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="372,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Sharepoint\Sharepoint_AddCountdownTimer.xaml">
               <ui:InvokeWorkflowFile.Arguments>
                 <InArgument x:TypeArguments="x:String" x:Key="in_CountDownDescription">
-                  <Literal x:TypeArguments="x:String">test</Literal>
+                  <Literal x:TypeArguments="x:String">Platform Renewal Countdown</Literal>
                 </InArgument>
                 <InArgument x:TypeArguments="x:String" x:Key="in_CountDownTitle">
-                  <Literal x:TypeArguments="x:String">test</Literal>
+                  <Literal x:TypeArguments="x:String">Platform Renewal</Literal>
                 </InArgument>
                 <InArgument x:TypeArguments="s:DateTime" x:Key="in_CountDownDateTime">
-                  <mva:VisualBasicValue x:TypeArguments="s:DateTime" ExpressionText="Now" />
+                  <mva:VisualBasicValue x:TypeArguments="s:DateTime" ExpressionText="dateTPlatform" />
                 </InArgument>
                 <InArgument x:TypeArguments="x:String" x:Key="in_CallToActionText">
-                  <Literal x:TypeArguments="x:String">test</Literal>
+                  <Literal x:TypeArguments="x:String">SFDC Record</Literal>
                 </InArgument>
                 <InArgument x:TypeArguments="x:String" x:Key="in_CallToActionLink">
-                  <Literal x:TypeArguments="x:String">https://www.google.com</Literal>
+                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="linkSFDCPlatform" />
                 </InArgument>
               </ui:InvokeWorkflowFile.Arguments>
             </ui:InvokeWorkflowFile>
             <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="372,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Sharepoint\Sharepoint_AddCountdownTimer.xaml">
               <ui:InvokeWorkflowFile.Arguments>
                 <InArgument x:TypeArguments="x:String" x:Key="in_CountDownDescription">
-                  <Literal x:TypeArguments="x:String">test2</Literal>
+                  <Literal x:TypeArguments="x:String">Premium Plus Countdown Timer</Literal>
                 </InArgument>
                 <InArgument x:TypeArguments="x:String" x:Key="in_CountDownTitle">
-                  <Literal x:TypeArguments="x:String">test2</Literal>
+                  <Literal x:TypeArguments="x:String">Premium Plus Support</Literal>
                 </InArgument>
                 <InArgument x:TypeArguments="s:DateTime" x:Key="in_CountDownDateTime">
-                  <mva:VisualBasicValue x:TypeArguments="s:DateTime" ExpressionText="Now" />
+                  <mva:VisualBasicValue x:TypeArguments="s:DateTime" ExpressionText="dateTPPRenewal" />
                 </InArgument>
                 <InArgument x:TypeArguments="x:String" x:Key="in_CallToActionText">
-                  <Literal x:TypeArguments="x:String">test</Literal>
+                  <Literal x:TypeArguments="x:String">SFDC Record</Literal>
                 </InArgument>
                 <InArgument x:TypeArguments="x:String" x:Key="in_CallToActionLink">
-                  <Literal x:TypeArguments="x:String">https://www.google.com</Literal>
+                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="linkSFDCPPR" />
                 </InArgument>
               </ui:InvokeWorkflowFile.Arguments>
             </ui:InvokeWorkflowFile>
           </Sequence>
-          <Sequence DisplayName="Fix Quick Links and Add New Ones" sap:VirtualizedContainerService.HintSize="200,68" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <Sequence DisplayName="Fix Quick Links and Add New Ones" sap:VirtualizedContainerService.HintSize="414,68" sap2010:WorkflowViewState.IdRef="Sequence_4">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="438,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Sharepoint\SharePoint_FixQuickLinks.xaml">
+            <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="334,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Sharepoint\SharePoint_FixQuickLinks.xaml">
               <ui:InvokeWorkflowFile.Arguments>
                 <scg:Dictionary x:TypeArguments="x:String, Argument" />
               </ui:InvokeWorkflowFile.Arguments>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
             </ui:InvokeWorkflowFile>
-            <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="438,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Sharepoint\SharePoint_AddQuickLink.xaml">
+            <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="334,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Sharepoint\SharePoint_AddQuickLink.xaml">
               <ui:InvokeWorkflowFile.Arguments>
                 <InArgument x:TypeArguments="x:String" x:Key="in_Link">
-                  <Literal x:TypeArguments="x:String">https://www.google.com</Literal>
+                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="linkLicenses" />
                 </InArgument>
                 <InArgument x:TypeArguments="x:String" x:Key="in_LinkTitle">
                   <Literal x:TypeArguments="x:String">Licenses</Literal>
                 </InArgument>
               </ui:InvokeWorkflowFile.Arguments>
             </ui:InvokeWorkflowFile>
-            <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="438,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="Sharepoint\SharePoint_AddQuickLink.xaml">
+            <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="334,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="Sharepoint\SharePoint_AddQuickLink.xaml">
               <ui:InvokeWorkflowFile.Arguments>
                 <InArgument x:TypeArguments="x:String" x:Key="in_Link">
-                  <Literal x:TypeArguments="x:String">https://www.google.com</Literal>
+                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="linkWrike" />
                 </InArgument>
                 <InArgument x:TypeArguments="x:String" x:Key="in_LinkTitle">
                   <Literal x:TypeArguments="x:String">Wrike</Literal>
                 </InArgument>
               </ui:InvokeWorkflowFile.Arguments>
             </ui:InvokeWorkflowFile>
-            <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="438,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" UnSafe="False" WorkflowFileName="Sharepoint\SharePoint_AddQuickLink.xaml">
+            <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="334,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" UnSafe="False" WorkflowFileName="Sharepoint\SharePoint_AddQuickLink.xaml">
               <ui:InvokeWorkflowFile.Arguments>
                 <InArgument x:TypeArguments="x:String" x:Key="in_Link">
-                  <Literal x:TypeArguments="x:String">https://www.google.com</Literal>
+                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="linkSalesforce" />
                 </InArgument>
                 <InArgument x:TypeArguments="x:String" x:Key="in_LinkTitle">
                   <Literal x:TypeArguments="x:String">Salesforce</Literal>
                 </InArgument>
               </ui:InvokeWorkflowFile.Arguments>
             </ui:InvokeWorkflowFile>
-            <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="438,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_8" UnSafe="False" WorkflowFileName="Sharepoint\SharePoint_AddQuickLink.xaml">
+            <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="334,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_8" UnSafe="False" WorkflowFileName="Sharepoint\SharePoint_AddQuickLink.xaml">
               <ui:InvokeWorkflowFile.Arguments>
                 <InArgument x:TypeArguments="x:String" x:Key="in_Link">
-                  <Literal x:TypeArguments="x:String">https://www.google.com</Literal>
+                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="linkWeb" />
                 </InArgument>
                 <InArgument x:TypeArguments="x:String" x:Key="in_LinkTitle">
                   <Literal x:TypeArguments="x:String">Web</Literal>
@@ -194,10 +208,10 @@
         </Sequence>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,355" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="460,22" sap2010:WorkflowViewState.IdRef="Catch`1_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>

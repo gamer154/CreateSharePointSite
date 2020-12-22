@@ -1,6 +1,14 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1105,644" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="out_siteAddress" Type="InArgument(x:String)" />
+  </x:Members>
+  <mva:VisualBasic.Settings>
+    <x:Null />
+  </mva:VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>1105,644</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
-    <sco:Collection x:TypeArguments="x:String">
+    <scg:List x:TypeArguments="x:String" Capacity="24">
       <x:String>System.Activities</x:String>
       <x:String>System.Activities.Statements</x:String>
       <x:String>System.Activities.Expressions</x:String>
@@ -24,10 +32,11 @@
       <x:String>System.Windows.Markup</x:String>
       <x:String>System.Collections.ObjectModel</x:String>
       <x:String>System.Activities.DynamicUpdate</x:String>
-    </sco:Collection>
+      <x:String>System.Runtime.Serialization</x:String>
+    </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <sco:Collection x:TypeArguments="AssemblyReference">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="25">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -52,45 +61,56 @@
       <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
       <AssemblyReference>UiPath.Mail</AssemblyReference>
       <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
-    </sco:Collection>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+    </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Flowchart sap:VirtualizedContainerService.HintSize="760,770" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+  <Flowchart sap:VirtualizedContainerService.HintSize="760,852" sap2010:WorkflowViewState.IdRef="Flowchart_1">
     <Flowchart.Variables>
       <Variable x:TypeArguments="x:String" Name="exception1" />
       <Variable x:TypeArguments="x:String" Name="siteAddress" />
       <Variable x:TypeArguments="x:String" Name="exception2" />
+      <Variable x:TypeArguments="x:String" Name="siteName" />
+      <Variable x:TypeArguments="x:String" Name="linkLicenses" />
+      <Variable x:TypeArguments="x:String" Name="linkSalesforce" />
+      <Variable x:TypeArguments="x:String" Name="linkWrike" />
+      <Variable x:TypeArguments="x:String" Name="linkWeb" />
+      <Variable x:TypeArguments="s:DateTime" Name="dateTPPRenewal" />
+      <Variable x:TypeArguments="x:String" Name="linkSFDCPPR" />
+      <Variable x:TypeArguments="s:DateTime" Name="dateTPlatform" />
+      <Variable x:TypeArguments="x:String" Name="linkSFDCPlatform" />
+      <Variable x:TypeArguments="x:String" Name="siteDescription" />
     </Flowchart.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-        <av:Point x:Key="ShapeLocation">270,2.5</av:Point>
+        <av:Point x:Key="ShapeLocation">280,2.5</av:Point>
         <av:Size x:Key="ShapeSize">60,75</av:Size>
-        <av:PointCollection x:Key="ConnectorLocation">300,77.5 300,127.5</av:PointCollection>
+        <av:PointCollection x:Key="ConnectorLocation">310,77.5 310,104.5</av:PointCollection>
         <x:Double x:Key="Width">726</x:Double>
-        <x:Double x:Key="Height">734</x:Double>
+        <x:Double x:Key="Height">815.5</x:Double>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <Flowchart.StartNode>
-      <x:Reference>__ReferenceID4</x:Reference>
+      <x:Reference>__ReferenceID9</x:Reference>
     </Flowchart.StartNode>
     <FlowStep x:Name="__ReferenceID4">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <av:Point x:Key="ShapeLocation">200,127.5</av:Point>
+          <av:Point x:Key="ShapeLocation">220,274.5</av:Point>
           <av:Size x:Key="ShapeSize">200,51</av:Size>
-          <av:PointCollection x:Key="ConnectorLocation">300,178.5 300,208.5 300.141666666667,208.5 300.141666666667,228.5</av:PointCollection>
+          <av:PointCollection x:Key="ConnectorLocation">320,325.5 320,366.5</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Sharepoint_CreateSite workflow" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Sharepoint\Sharepoint_CreateSite.xaml">
+      <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Sharepoint_CreateSite workflow" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Sharepoint\Sharepoint_CreateSite.xaml">
         <ui:InvokeWorkflowFile.Arguments>
           <InArgument x:TypeArguments="x:String" x:Key="in_SiteName">
-            <Literal x:TypeArguments="x:String">shotst1</Literal>
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="siteName" />
           </InArgument>
           <InArgument x:TypeArguments="x:String" x:Key="in_SiteDescription">
-            <Literal x:TypeArguments="x:String">shoaib's testing site</Literal>
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="siteDescription" />
           </InArgument>
           <OutArgument x:TypeArguments="x:String" x:Key="out_SiteAddress">
-            <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="siteAddress" />
+            <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="out_siteAddress" />
           </OutArgument>
           <OutArgument x:TypeArguments="x:String" x:Key="out_Exception">
             <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="exception1" />
@@ -110,18 +130,19 @@
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-              <av:Point x:Key="ShapeLocation">260.641666666667,228.5</av:Point>
+              <av:Point x:Key="ShapeLocation">280.5,366.5</av:Point>
               <av:Size x:Key="ShapeSize">79,87</av:Size>
-              <av:PointCollection x:Key="TrueConnector">260.641666666667,272 160,272 160,374.5</av:PointCollection>
+              <av:PointCollection x:Key="TrueConnector">280.5,410 200,410 200,494.5</av:PointCollection>
+              <av:PointCollection x:Key="FalseConnector">359.5,410 389.5,410 389.5,430 480,430</av:PointCollection>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
           <FlowDecision.True>
             <FlowStep x:Name="__ReferenceID0">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <av:Point x:Key="ShapeLocation">60,374.5</av:Point>
+                  <av:Point x:Key="ShapeLocation">100,494.5</av:Point>
                   <av:Size x:Key="ShapeSize">200,51</av:Size>
-                  <av:PointCollection x:Key="ConnectorLocation">160,425.5 160,455.5 160.141666666667,455.5 160.141666666667,475.5</av:PointCollection>
+                  <av:PointCollection x:Key="ConnectorLocation">200,545.5 200,596.5</av:PointCollection>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Sharepoint_LayoutChange workflow" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Sharepoint\Sharepoint_LayoutChange.xaml">
@@ -129,6 +150,30 @@
                   <OutArgument x:TypeArguments="x:String" x:Key="out_Exception">
                     <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="exception2" />
                   </OutArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="linkLicenses">
+                    <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="linkLicenses" />
+                  </InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="linkSalesforce">
+                    <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="linkSalesforce" />
+                  </InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="linkWrike">
+                    <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="linkWrike" />
+                  </InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="linkWeb">
+                    <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="linkWeb" />
+                  </InArgument>
+                  <InArgument x:TypeArguments="s:DateTime" x:Key="dateTPPRenewal">
+                    <mva:VisualBasicValue x:TypeArguments="s:DateTime" ExpressionText="dateTPPRenewal" />
+                  </InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="linkSFDCPPR">
+                    <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="linkSFDCPPR" />
+                  </InArgument>
+                  <InArgument x:TypeArguments="s:DateTime" x:Key="dateTPlatform">
+                    <mva:VisualBasicValue x:TypeArguments="s:DateTime" ExpressionText="dateTPlatform" />
+                  </InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="linkSFDCPlatform">
+                    <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="linkSFDCPlatform" />
+                  </InArgument>
                 </ui:InvokeWorkflowFile.Arguments>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -144,16 +189,17 @@
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      <av:Point x:Key="ShapeLocation">120.641666666667,475.5</av:Point>
+                      <av:Point x:Key="ShapeLocation">160.5,596.5</av:Point>
                       <av:Size x:Key="ShapeSize">79,87</av:Size>
-                      <av:PointCollection x:Key="TrueConnector">120.641666666667,519 100,519 100,644.5</av:PointCollection>
+                      <av:PointCollection x:Key="TrueConnector">160.5,640 140,640 140,764.5</av:PointCollection>
+                      <av:PointCollection x:Key="FalseConnector">239.5,640 430,640</av:PointCollection>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <FlowDecision.True>
                     <FlowStep x:Name="__ReferenceID1">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <av:Point x:Key="ShapeLocation">0,644.5</av:Point>
+                          <av:Point x:Key="ShapeLocation">40,764.5</av:Point>
                           <av:Size x:Key="ShapeSize">200,51</av:Size>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
@@ -169,10 +215,44 @@
                       </ui:InvokeWorkflowFile>
                     </FlowStep>
                   </FlowDecision.True>
+                  <FlowDecision.False>
+                    <FlowStep x:Name="__ReferenceID8">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <av:Point x:Key="ShapeLocation">430,629</av:Point>
+                          <av:Size x:Key="ShapeSize">200,22</av:Size>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Throw Exception="[new BusinessRuleException(&quot;Failed to edit site layout. Error: &quot;+exception2)]" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Throw_1">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </Throw>
+                    </FlowStep>
+                  </FlowDecision.False>
                 </FlowDecision>
               </FlowStep.Next>
             </FlowStep>
           </FlowDecision.True>
+          <FlowDecision.False>
+            <FlowStep x:Name="__ReferenceID7">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <av:Point x:Key="ShapeLocation">480,419</av:Point>
+                  <av:Size x:Key="ShapeSize">200,22</av:Size>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Throw Exception="[new BusinessRuleException(&quot;Failed to create sharepoint site. Error: &quot;+exception1)]" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Throw_2">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </Throw>
+            </FlowStep>
+          </FlowDecision.False>
         </FlowDecision>
       </FlowStep.Next>
     </FlowStep>
@@ -180,5 +260,94 @@
     <x:Reference>__ReferenceID1</x:Reference>
     <x:Reference>__ReferenceID2</x:Reference>
     <x:Reference>__ReferenceID3</x:Reference>
+    <FlowStep x:Name="__ReferenceID9">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <av:Point x:Key="ShapeLocation">210,104.5</av:Point>
+          <av:Size x:Key="ShapeSize">200,51</av:Size>
+          <av:PointCollection x:Key="ConnectorLocation">410,130 479.891666666667,130 479.891666666667,156.5</av:PointCollection>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Forms_MainForm workflow" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Forms\Forms_MainForm.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <OutArgument x:TypeArguments="x:String" x:Key="linkSalesforce">
+            <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="linkSalesforce" />
+          </OutArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="linkWrike">
+            <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="linkWrike" />
+          </OutArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="linkWeb">
+            <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="linkWeb" />
+          </OutArgument>
+          <OutArgument x:TypeArguments="s:DateTime" x:Key="dateTPPRenewal">
+            <mva:VisualBasicReference x:TypeArguments="s:DateTime" ExpressionText="dateTPPRenewal" />
+          </OutArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="linkSFDCPPR">
+            <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="linkSFDCPPR" />
+          </OutArgument>
+          <OutArgument x:TypeArguments="s:DateTime" x:Key="dateTPlatform">
+            <mva:VisualBasicReference x:TypeArguments="s:DateTime" ExpressionText="dateTPlatform" />
+          </OutArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="linkSFDCPlatform">
+            <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="linkSFDCPlatform" />
+          </OutArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="siteName">
+            <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="siteName" />
+          </OutArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="siteDescription">
+            <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="siteDescription" />
+          </OutArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="linkLicenses">
+            <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="linkLicenses" />
+          </OutArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="submit" />
+        </ui:InvokeWorkflowFile.Arguments>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:InvokeWorkflowFile>
+      <FlowStep.Next>
+        <FlowDecision x:Name="__ReferenceID5" DisplayName="Flow Decision" sap:VirtualizedContainerService.HintSize="79,87" sap2010:WorkflowViewState.IdRef="FlowDecision_3">
+          <FlowDecision.Condition>
+            <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="siteName isnot Nothing" />
+          </FlowDecision.Condition>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <av:Point x:Key="ShapeLocation">420.641666666667,156.5</av:Point>
+              <av:Size x:Key="ShapeSize">79,87</av:Size>
+              <av:PointCollection x:Key="TrueConnector">420.641666666667,200 320,200 320,274.5</av:PointCollection>
+              <av:PointCollection x:Key="FalseConnector">499.641666666667,200 590,200 590,269</av:PointCollection>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <FlowDecision.True>
+            <x:Reference>__ReferenceID4</x:Reference>
+          </FlowDecision.True>
+          <FlowDecision.False>
+            <FlowStep x:Name="__ReferenceID6">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <av:Point x:Key="ShapeLocation">490,269</av:Point>
+                  <av:Size x:Key="ShapeSize">200,22</av:Size>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Throw Exception="[new BusinessRuleException(&quot;Form closed. No inputs given.&quot;)]" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Throw_3">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </Throw>
+            </FlowStep>
+          </FlowDecision.False>
+        </FlowDecision>
+      </FlowStep.Next>
+    </FlowStep>
+    <x:Reference>__ReferenceID5</x:Reference>
+    <x:Reference>__ReferenceID6</x:Reference>
+    <x:Reference>__ReferenceID7</x:Reference>
+    <x:Reference>__ReferenceID8</x:Reference>
   </Flowchart>
 </Activity>
