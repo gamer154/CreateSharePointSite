@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-16"?>
+<TargetAnchorable BrowserURL="https://www.wrike.com/workspace.htm?acc=901790&amp;wr=6#path=request-forms&amp;accountid=901790&amp;formid=297445&amp;query=new%20premium%20plus" ContentHash="Bw1ehPJ0T0OkrkqOzfeJaQ" DesignTimeRectangle="288, 534, 608, 40" ElementType="DropDown" FriendlyName="'AMERAPACEMEAIndia'" FullSelectorArgument="&lt;webctrl idx='1' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='SELECT' aaname='' /&gt;" IsNativeTextCaseSensitive="False" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Request - Wrike' /&gt;" SearchSteps="Selector" Text="AMER&#xA;APAC&#xA;EMEA&#xA;India" TextMethod="FullTextScrapping" xmlns="http://schemas.uipath.com/workflow/activities/uix">
+  <imageRef attrName="ImageBase64" xmlns="">0I9ierO9BWE6hlVKwlvzODA</imageRef>
+  <imageRef attrName="InformativeScreenshot" originalValue="2fc6d0752bad67cb9a97a3336497592a.png" xmlns="">08jWttNlaIEeJwaTLJG-8eg</imageRef>
+</TargetAnchorable>

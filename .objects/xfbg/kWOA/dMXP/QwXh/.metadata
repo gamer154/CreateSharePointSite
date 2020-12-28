@@ -1,0 +1,13 @@
+﻿{
+  "Id": "QwXhdO8mHku9v71fQ3zaYQ",
+  "Reference": "x53wdMOYU0i6wyj3bGLciw/QwXhdO8mHku9v71fQ3zaYQ",
+  "ParentRef": "x53wdMOYU0i6wyj3bGLciw/dMXPsmcPRUy_VJWO-Cfg8w",
+  "Name": "Salesforce Account Name",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Created": "2020-12-28T20:42:34.8443651Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=20.10.4.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2020-12-28T20:42:34.8443651Z"
+}

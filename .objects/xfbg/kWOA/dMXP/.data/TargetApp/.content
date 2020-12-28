@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-16"?>
+<TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" ContentHash="Ehg2Mu7yEE6JEBdRvYSTuA" Reference="x53wdMOYU0i6wyj3bGLciw/dMXPsmcPRUy_VJWO-Cfg8w" Selector="&lt;html app='chrome.exe' title='Request - Wrike'/&gt;" Url="https://www.wrike.com/workspace.htm?acc=901790&amp;wr=6#path=request-forms&amp;accountid=901790&amp;formid=297445&amp;query=new%20premium%20plus" xmlns="http://schemas.uipath.com/workflow/activities/uix">
+  <imageRef attrName="IconBase64" xmlns="">0ntVMRy3aZk2KfO83NylpHg</imageRef>
+  <imageRef attrName="InformativeScreenshot" originalValue="821fe057d07864317f64b7a16b153462.png" xmlns="">0H6hw-NoimUSN0kBB6i4LxQ</imageRef>
+</TargetApp>

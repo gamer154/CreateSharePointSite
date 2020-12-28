@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-16"?>
+<TargetAnchorable BrowserURL="https://www.wrike.com/workspace.htm?acc=901790&amp;wr=6#path=request-forms&amp;accountid=901790&amp;formid=297445&amp;query=new%20premium%20plus" ContentHash="5uDpiIfTb0W0WzRRpceMPA" DesignTimeRectangle="288, 438, 160, 40" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl parentid='ext-comp-1014' tag='INPUT' idx='3' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='ext-comp-1014' tag='INPUT' type='' aaname='' /&gt;" IsNativeTextCaseSensitive="False" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Request - Wrike' /&gt;" SearchSteps="Selector" xmlns="http://schemas.uipath.com/workflow/activities/uix">
+  <imageRef attrName="ImageBase64" xmlns="">0LwXplF4iMk2-Ze6WSUX9dg</imageRef>
+  <imageRef attrName="InformativeScreenshot" originalValue="ead46c9487dd3dc80ca93a2ee075cd20.png" xmlns="">0GcFh9jDEmk6guirm8kCPyQ</imageRef>
+</TargetAnchorable>

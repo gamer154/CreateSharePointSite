@@ -1,0 +1,17 @@
+﻿{
+  "Id": "Bi3afdsZekuyTTZyNrrEZg",
+  "Reference": "x53wdMOYU0i6wyj3bGLciw/Bi3afdsZekuyTTZyNrrEZg",
+  "ParentRef": "x53wdMOYU0i6wyj3bGLciw/dMXPsmcPRUy_VJWO-Cfg8w",
+  "Name": "Subscription Start Date",
+  "Description": "Subscription Start Date",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Created": "2020-12-28T20:42:34.9938088Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=20.10.4.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2020-12-28T20:56:32.1393595Z",
+  "UpdatedBy": [
+    "UiPath.Platform, Version=20.10.4.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

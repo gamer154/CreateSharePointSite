@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-16"?>
+<TargetAnchorable BrowserURL="https://www.wrike.com/workspace.htm?acc=901790&amp;wr=6#path=request-forms&amp;accountid=901790&amp;formid=297445&amp;query=new%20premium%20plus" ContentHash="dmnTFEqqOkaNZ802si85IA" DesignTimeRectangle="798, 794, 98, 40" ElementType="Button" FriendlyName="'Submit'" FullSelectorArgument="&lt;webctrl aaname='Submit' parentid='ext-comp-1023' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Submit' parentid='ext-comp-1023' tag='BUTTON' type='' check:text='Submit' /&gt;" IsNativeTextCaseSensitive="False" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Request - Wrike' /&gt;" SearchSteps="Selector" Text="Submit" TextMethod="AttributeText" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TargetAnchorable.Anchors>
+    <scg:List x:TypeArguments="ITarget" Capacity="4">
+      <Target DesignTimeRectangle="822, 795, 50, 38" ElementType="Text" FriendlyName="'Submit'" FullSelectorArgument="&lt;webctrl aaname='Submit' parentid='ext-comp-1023' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Submit' parentid='ext-comp-1023' tag='DIV' type='' check:text='Submit' /&gt;" IsNativeTextCaseSensitive="False" SearchSteps="FuzzySelector, Image" Text="Submit" TextMethod="AttributeText">
+        <imageRef attrName="ImageBase64" xmlns="">3Xycg6VE9h068jhhW-DaZ3g</imageRef>
+      </Target>
+    </scg:List>
+  </TargetAnchorable.Anchors>
+  <imageRef attrName="ImageBase64" xmlns="">02w2pVdaCoUufPNbY7fG3RQ</imageRef>
+  <imageRef attrName="InformativeScreenshot" originalValue="bae276d87dbdcfc33950e1a876716193.png" xmlns="">0LnROMP4bxkSRpTv22GA0Pw</imageRef>
+</TargetAnchorable>

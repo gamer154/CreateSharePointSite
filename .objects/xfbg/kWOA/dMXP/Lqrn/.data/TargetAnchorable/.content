@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-16"?>
+<TargetAnchorable BrowserURL="https://www.wrike.com/workspace.htm?acc=901790&amp;wr=6#path=request-forms&amp;accountid=901790&amp;formid=297445&amp;query=new%20premium%20plus" ContentHash="USjNy_wt_EaTt0Mssct5Ww" DesignTimeRectangle="288, 630, 608, 40" ElementType="DropDown" FriendlyName="'Less than'" FullSelectorArgument="&lt;webctrl idx='2' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='SELECT' aaname='' /&gt;" IsNativeTextCaseSensitive="False" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Request - Wrike' /&gt;" SearchSteps="Selector" Text="Less than USD 100k&#xA;USD 100k to less than 250k&#xA;USD 250k to less than 500k&#xA;USD 500k to less than 750k" TextMethod="FullTextScrapping" xmlns="http://schemas.uipath.com/workflow/activities/uix">
+  <imageRef attrName="ImageBase64" xmlns="">0rCcVbIeQs0G1zqg_YaCldQ</imageRef>
+  <imageRef attrName="InformativeScreenshot" originalValue="4845e787882a4fc6de942c05daeb5964.png" xmlns="">0oNPtxBXuO0WYhlKMSpb5IQ</imageRef>
+</TargetAnchorable>

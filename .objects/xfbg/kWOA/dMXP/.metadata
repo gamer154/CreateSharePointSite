@@ -1,0 +1,15 @@
+﻿{
+  "Id": "dMXPsmcPRUy_VJWO-Cfg8w",
+  "Reference": "x53wdMOYU0i6wyj3bGLciw/dMXPsmcPRUy_VJWO-Cfg8w",
+  "ParentRef": "x53wdMOYU0i6wyj3bGLciw/kWOAj6DtTEmOtIAUJI_iAA",
+  "Name": "WrikeProjectPage",
+  "Type": "Screen",
+  "Created": "2020-12-28T20:39:22.8381688Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=20.10.4.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2020-12-28T20:46:18.0451475Z",
+  "UpdatedBy": [
+    "UiPath.Platform, Version=20.10.4.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

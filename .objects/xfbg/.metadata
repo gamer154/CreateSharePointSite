@@ -1,0 +1,14 @@
+﻿{
+  "Id": "xfbgg5UQkUGaYPmrGF7G9g",
+  "Reference": "x53wdMOYU0i6wyj3bGLciw/xfbgg5UQkUGaYPmrGF7G9g",
+  "Name": "WrikeApp",
+  "Type": "App",
+  "Created": "2020-12-28T20:38:30.1511205Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=20.10.4.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2020-12-28T20:46:18.0061474Z",
+  "UpdatedBy": [
+    "UiPath.Platform, Version=20.10.4.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
