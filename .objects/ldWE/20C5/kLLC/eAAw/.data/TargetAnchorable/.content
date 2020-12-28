@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-16"?>
+<TargetAnchorable BrowserURL="https://uipath.lightning.force.com/lightning/r/OpportunityLineItem/00k1Q00003c2HQjQAM/view" ContentHash="Dl_e2-oNGkuqkHl71VCo4g" DesignTimeRectangle="73, 525, 83, 18" ElementType="Text" FriendlyName="'4/30/2022'" FullSelectorArgument="&lt;html app='chrome.exe' title='*| Salesforce' /&gt;&lt;webctrl aaname='End Date' parentid='*' tag='SPAN' /&gt;&lt;nav up='2' /&gt;&lt;webctrl tag='SPAN' class='uiOutputDate' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SPAN' class='uiOutputDate' type='' aaname='4/30/2022' check:text='4/30/2022' /&gt;" IsNativeTextCaseSensitive="False" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Upsell- Renewal - Net New Phase 2 FY21 - COVID UiPath Premium Plus | Salesforce' /&gt;" SearchSteps="Selector" Text="4/30/2022" TextMethod="AttributeText" xmlns="http://schemas.uipath.com/workflow/activities/uix">
+  <imageRef attrName="ImageBase64" xmlns="">05Vu1nJb57U2UfuWCZLTDGA</imageRef>
+  <imageRef attrName="InformativeScreenshot" originalValue="81c1d342cb6ff85b159cbf4f8a768be4.png" xmlns="">011_xWcUVg0aVy0_--mFpiw</imageRef>
+</TargetAnchorable>

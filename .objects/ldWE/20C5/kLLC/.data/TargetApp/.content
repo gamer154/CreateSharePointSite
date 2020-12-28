@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-16"?>
+<TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" ContentHash="-erKUr_U9ESTUk873i1osQ" Selector="&lt;html app='chrome.exe' title='*| Salesforce' /&gt;" Url="[in_URL]" xmlns="http://schemas.uipath.com/workflow/activities/uix">
+  <imageRef attrName="IconBase64" xmlns="">0ZxjGmGECsUmIGOBC0bbeKA</imageRef>
+  <imageRef attrName="InformativeScreenshot" originalValue="e35ea68fbe6e91e7e5f5a6b1ae874ad6.png" xmlns="">0XbAjYTRaDUutamKXxPL-cw</imageRef>
+</TargetApp>
