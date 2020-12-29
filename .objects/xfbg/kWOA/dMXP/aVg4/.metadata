@@ -1,0 +1,17 @@
+﻿{
+  "Id": "aVg4AG4sjE2643JufOBWOg",
+  "Reference": "x53wdMOYU0i6wyj3bGLciw/aVg4AG4sjE2643JufOBWOg",
+  "ParentRef": "x53wdMOYU0i6wyj3bGLciw/dMXPsmcPRUy_VJWO-Cfg8w",
+  "Name": "WrikeProjectURL",
+  "Description": "URL for newly created Wrike Project",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Created": "2020-12-29T15:30:47.8148434Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=20.10.4.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2020-12-29T15:31:52.5667058Z",
+  "UpdatedBy": [
+    "UiPath.Platform, Version=20.10.4.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
