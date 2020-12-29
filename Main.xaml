@@ -5,7 +5,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1105,644</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1105,917</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="24">
@@ -82,39 +82,31 @@
     </Flowchart.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <av:Point x:Key="ShapeLocation">280,2.5</av:Point>
         <av:Size x:Key="ShapeSize">60,75</av:Size>
-        <av:PointCollection x:Key="ConnectorLocation">310,77.5 310,104.5</av:PointCollection>
+        <av:PointCollection x:Key="ConnectorLocation">310,77.5 310,114.5</av:PointCollection>
         <x:Double x:Key="Width">726</x:Double>
         <x:Double x:Key="Height">815.5</x:Double>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <Flowchart.StartNode>
-      <x:Reference>__ReferenceID9</x:Reference>
+      <x:Reference>__ReferenceID6</x:Reference>
     </Flowchart.StartNode>
-    <FlowStep x:Name="__ReferenceID4">
+    <FlowStep>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <av:Point x:Key="ShapeLocation">220,274.5</av:Point>
+          <av:Point x:Key="ShapeLocation">210,214.5</av:Point>
           <av:Size x:Key="ShapeSize">200,51</av:Size>
-          <av:PointCollection x:Key="ConnectorLocation">320,325.5 320,366.5</av:PointCollection>
+          <av:PointCollection x:Key="ConnectorLocation">310,265.5 310,295.5 320,295.5 320,366.5</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Sharepoint_CreateSite workflow" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Sharepoint\Sharepoint_CreateSite.xaml">
+      <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Sharepoint_CreateSite workflow" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Sharepoint\Sharepoint_CreateSite.xaml">
         <ui:InvokeWorkflowFile.Arguments>
-          <InArgument x:TypeArguments="x:String" x:Key="in_SiteName">
-            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="siteName" />
-          </InArgument>
-          <InArgument x:TypeArguments="x:String" x:Key="in_SiteDescription">
-            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="siteDescription" />
-          </InArgument>
-          <OutArgument x:TypeArguments="x:String" x:Key="out_SiteAddress">
-            <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="out_siteAddress" />
-          </OutArgument>
-          <OutArgument x:TypeArguments="x:String" x:Key="out_Exception">
-            <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="exception1" />
-          </OutArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="in_SiteName">[siteName]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="in_SiteDescription">[siteDescription]</InArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="out_SiteAddress">[out_siteAddress]</OutArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="out_Exception">[exception1]</OutArgument>
         </ui:InvokeWorkflowFile.Arguments>
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -123,10 +115,7 @@
         </sap:WorkflowViewStateService.ViewState>
       </ui:InvokeWorkflowFile>
       <FlowStep.Next>
-        <FlowDecision x:Name="__ReferenceID2" DisplayName="Flow Decision" sap:VirtualizedContainerService.HintSize="79,87" sap2010:WorkflowViewState.IdRef="FlowDecision_2">
-          <FlowDecision.Condition>
-            <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="exception1 is Nothing" />
-          </FlowDecision.Condition>
+        <FlowDecision x:Name="__ReferenceID2" Condition="[exception1 is Nothing]" DisplayName="Flow Decision" sap:VirtualizedContainerService.HintSize="79,87" sap2010:WorkflowViewState.IdRef="FlowDecision_2">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -147,33 +136,15 @@
               </sap:WorkflowViewStateService.ViewState>
               <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Sharepoint_LayoutChange workflow" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Sharepoint\Sharepoint_LayoutChange.xaml">
                 <ui:InvokeWorkflowFile.Arguments>
-                  <OutArgument x:TypeArguments="x:String" x:Key="out_Exception">
-                    <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="exception2" />
-                  </OutArgument>
-                  <InArgument x:TypeArguments="x:String" x:Key="linkLicenses">
-                    <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="linkLicenses" />
-                  </InArgument>
-                  <InArgument x:TypeArguments="x:String" x:Key="linkSalesforce">
-                    <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="linkSalesforce" />
-                  </InArgument>
-                  <InArgument x:TypeArguments="x:String" x:Key="linkWrike">
-                    <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="linkWrike" />
-                  </InArgument>
-                  <InArgument x:TypeArguments="x:String" x:Key="linkWeb">
-                    <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="linkWeb" />
-                  </InArgument>
-                  <InArgument x:TypeArguments="s:DateTime" x:Key="dateTPPRenewal">
-                    <mva:VisualBasicValue x:TypeArguments="s:DateTime" ExpressionText="dateTPPRenewal" />
-                  </InArgument>
-                  <InArgument x:TypeArguments="x:String" x:Key="linkSFDCPPR">
-                    <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="linkSFDCPPR" />
-                  </InArgument>
-                  <InArgument x:TypeArguments="s:DateTime" x:Key="dateTPlatform">
-                    <mva:VisualBasicValue x:TypeArguments="s:DateTime" ExpressionText="dateTPlatform" />
-                  </InArgument>
-                  <InArgument x:TypeArguments="x:String" x:Key="linkSFDCPlatform">
-                    <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="linkSFDCPlatform" />
-                  </InArgument>
+                  <OutArgument x:TypeArguments="x:String" x:Key="out_Exception">[exception2]</OutArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="linkLicenses">[linkLicenses]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="linkSalesforce">[linkSalesforce]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="linkWrike">[linkWrike]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="linkWeb">[linkWeb]</InArgument>
+                  <InArgument x:TypeArguments="s:DateTime" x:Key="dateTPPRenewal">[dateTPPRenewal]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="linkSFDCPPR">[linkSFDCPPR]</InArgument>
+                  <InArgument x:TypeArguments="s:DateTime" x:Key="dateTPlatform">[dateTPlatform]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="linkSFDCPlatform">[linkSFDCPlatform]</InArgument>
                 </ui:InvokeWorkflowFile.Arguments>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -182,10 +153,7 @@
                 </sap:WorkflowViewStateService.ViewState>
               </ui:InvokeWorkflowFile>
               <FlowStep.Next>
-                <FlowDecision x:Name="__ReferenceID3" DisplayName="Flow Decision" sap:VirtualizedContainerService.HintSize="79,87" sap2010:WorkflowViewState.IdRef="FlowDecision_1">
-                  <FlowDecision.Condition>
-                    <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="exception2 is Nothing" />
-                  </FlowDecision.Condition>
+                <FlowDecision x:Name="__ReferenceID3" Condition="[exception2 is Nothing]" DisplayName="Flow Decision" sap:VirtualizedContainerService.HintSize="79,87" sap2010:WorkflowViewState.IdRef="FlowDecision_1">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -216,7 +184,7 @@
                     </FlowStep>
                   </FlowDecision.True>
                   <FlowDecision.False>
-                    <FlowStep x:Name="__ReferenceID8">
+                    <FlowStep x:Name="__ReferenceID5">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <av:Point x:Key="ShapeLocation">430,629</av:Point>
@@ -237,7 +205,7 @@
             </FlowStep>
           </FlowDecision.True>
           <FlowDecision.False>
-            <FlowStep x:Name="__ReferenceID7">
+            <FlowStep x:Name="__ReferenceID4">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <av:Point x:Key="ShapeLocation">480,419</av:Point>
@@ -260,46 +228,25 @@
     <x:Reference>__ReferenceID1</x:Reference>
     <x:Reference>__ReferenceID2</x:Reference>
     <x:Reference>__ReferenceID3</x:Reference>
-    <FlowStep x:Name="__ReferenceID9">
+    <FlowStep x:Name="__ReferenceID6">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <av:Point x:Key="ShapeLocation">210,104.5</av:Point>
+          <av:Point x:Key="ShapeLocation">210,114.5</av:Point>
           <av:Size x:Key="ShapeSize">200,51</av:Size>
-          <av:PointCollection x:Key="ConnectorLocation">410,130 479.891666666667,130 479.891666666667,156.5</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Forms_MainForm workflow" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Forms\Forms_MainForm.xaml">
         <ui:InvokeWorkflowFile.Arguments>
-          <OutArgument x:TypeArguments="x:String" x:Key="linkSalesforce">
-            <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="linkSalesforce" />
-          </OutArgument>
-          <OutArgument x:TypeArguments="x:String" x:Key="linkWrike">
-            <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="linkWrike" />
-          </OutArgument>
-          <OutArgument x:TypeArguments="x:String" x:Key="linkWeb">
-            <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="linkWeb" />
-          </OutArgument>
-          <OutArgument x:TypeArguments="s:DateTime" x:Key="dateTPPRenewal">
-            <mva:VisualBasicReference x:TypeArguments="s:DateTime" ExpressionText="dateTPPRenewal" />
-          </OutArgument>
-          <OutArgument x:TypeArguments="x:String" x:Key="linkSFDCPPR">
-            <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="linkSFDCPPR" />
-          </OutArgument>
-          <OutArgument x:TypeArguments="s:DateTime" x:Key="dateTPlatform">
-            <mva:VisualBasicReference x:TypeArguments="s:DateTime" ExpressionText="dateTPlatform" />
-          </OutArgument>
-          <OutArgument x:TypeArguments="x:String" x:Key="linkSFDCPlatform">
-            <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="linkSFDCPlatform" />
-          </OutArgument>
-          <OutArgument x:TypeArguments="x:String" x:Key="siteName">
-            <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="siteName" />
-          </OutArgument>
-          <OutArgument x:TypeArguments="x:String" x:Key="siteDescription">
-            <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="siteDescription" />
-          </OutArgument>
-          <OutArgument x:TypeArguments="x:String" x:Key="linkLicenses">
-            <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="linkLicenses" />
-          </OutArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="linkSalesforce">[linkSalesforce]</OutArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="linkWrike">[linkWrike]</OutArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="linkWeb">[linkWeb]</OutArgument>
+          <OutArgument x:TypeArguments="s:DateTime" x:Key="dateTPPRenewal">[dateTPPRenewal]</OutArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="linkSFDCPPR">[linkSFDCPPR]</OutArgument>
+          <OutArgument x:TypeArguments="s:DateTime" x:Key="dateTPlatform">[dateTPlatform]</OutArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="linkSFDCPlatform">[linkSFDCPlatform]</OutArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="siteName">[siteName]</OutArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="siteDescription">[siteDescription]</OutArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="linkLicenses">[linkLicenses]</OutArgument>
           <OutArgument x:TypeArguments="x:String" x:Key="submit" />
         </ui:InvokeWorkflowFile.Arguments>
         <sap:WorkflowViewStateService.ViewState>
@@ -308,46 +255,8 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:InvokeWorkflowFile>
-      <FlowStep.Next>
-        <FlowDecision x:Name="__ReferenceID5" DisplayName="Flow Decision" sap:VirtualizedContainerService.HintSize="79,87" sap2010:WorkflowViewState.IdRef="FlowDecision_3">
-          <FlowDecision.Condition>
-            <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="siteName isnot Nothing" />
-          </FlowDecision.Condition>
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-              <av:Point x:Key="ShapeLocation">420.641666666667,156.5</av:Point>
-              <av:Size x:Key="ShapeSize">79,87</av:Size>
-              <av:PointCollection x:Key="TrueConnector">420.641666666667,200 320,200 320,274.5</av:PointCollection>
-              <av:PointCollection x:Key="FalseConnector">499.641666666667,200 590,200 590,269</av:PointCollection>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-          <FlowDecision.True>
-            <x:Reference>__ReferenceID4</x:Reference>
-          </FlowDecision.True>
-          <FlowDecision.False>
-            <FlowStep x:Name="__ReferenceID6">
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <av:Point x:Key="ShapeLocation">490,269</av:Point>
-                  <av:Size x:Key="ShapeSize">200,22</av:Size>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-              <Throw Exception="[new BusinessRuleException(&quot;Form closed. No inputs given.&quot;)]" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Throw_3">
-                <sap:WorkflowViewStateService.ViewState>
-                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                  </scg:Dictionary>
-                </sap:WorkflowViewStateService.ViewState>
-              </Throw>
-            </FlowStep>
-          </FlowDecision.False>
-        </FlowDecision>
-      </FlowStep.Next>
     </FlowStep>
+    <x:Reference>__ReferenceID4</x:Reference>
     <x:Reference>__ReferenceID5</x:Reference>
-    <x:Reference>__ReferenceID6</x:Reference>
-    <x:Reference>__ReferenceID7</x:Reference>
-    <x:Reference>__ReferenceID8</x:Reference>
   </Flowchart>
 </Activity>

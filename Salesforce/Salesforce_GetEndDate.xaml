@@ -1,13 +1,13 @@
 <Activity mc:Ignorable="sap sap2010" x:Class="Salesforce_GetEndDate" this:Salesforce_GetEndDate.in_URL="https://uipath.lightning.force.com/lightning/r/OpportunityLineItem/00k1Q00003c2HQjQAM/view" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
-    <x:Property Name="out_EndDate" Type="OutArgument(x:String)" />
+    <x:Property Name="out_EndDate" Type="OutArgument(s:DateTime)" />
     <x:Property Name="in_URL" Type="InArgument(x:String)" />
     <x:Property Name="out_SFGetDateException" Type="OutArgument(x:String)" />
   </x:Members>
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1098,711</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1105,1132</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Salesforce_GetEndDate_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -41,6 +41,7 @@
       <x:String>System.Activities.DynamicUpdate</x:String>
       <x:String>UiPath.UIAutomationNext.Contracts</x:String>
       <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Globalization</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -81,36 +82,46 @@
       <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Salesforce_GetEndDate" sap:VirtualizedContainerService.HintSize="476,606" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Salesforce_GetEndDate" sap:VirtualizedContainerService.HintSize="514,1027" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="EndDate" />
+    </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="434,514" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="472,935" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
-        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" DisplayName="Get End Date for Product" sap:VirtualizedContainerService.HintSize="434,669" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" Version="V1">
+        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" DisplayName="Get End Date for Product" sap:VirtualizedContainerService.HintSize="434,708" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" Version="V1">
           <uix:NApplicationCard.Body>
             <ActivityAction x:TypeArguments="x:Object">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,453" sap2010:WorkflowViewState.IdRef="Sequence_2">
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,492" sap2010:WorkflowViewState.IdRef="Sequence_2">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
                 <uix:NGetText DisplayName="Get End Date" sap:VirtualizedContainerService.HintSize="334,166" sap2010:WorkflowViewState.IdRef="NGetText_1">
                   <uix:NGetText.Target>
                     <uix:TargetAnchorable BrowserURL="https://uipath.lightning.force.com/lightning/r/OpportunityLineItem/00k1Q00003c2HQjQAM/view" ContentHash="Dl_e2-oNGkuqkHl71VCo4g" DesignTimeRectangle="73, 525, 83, 18" ElementType="Text" FriendlyName="'4/30/2022'" FullSelectorArgument="&lt;html app='chrome.exe' title='*| Salesforce' /&gt;&lt;webctrl aaname='End Date' parentid='*' tag='SPAN' /&gt;&lt;nav up='2' /&gt;&lt;webctrl tag='SPAN' class='uiOutputDate' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SPAN' class='uiOutputDate' type='' aaname='4/30/2022' check:text='4/30/2022' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAE8AAAAWCAYAAACBtcG5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQ+SURBVFhH7ZdLS11XFMc7Sz9ACukHSGfpJPULpLGkRBttRFBUYklj0tj4qA9EFCQ+mkQDohNxoKDRxkAs6kBRHChIOoj1gago+MIHGEXEJz5W+K2cczn33HOuXm8GGZw/HLj7tdZe//1fa+/7lXi4MDzywoBHXhjwyAsDHnlh4MLk7e3tSUFBgUxPTxs9nx9DQ0Pyd0WFnJ6eGj1fFhzJ+7e9XdIfP1aC3LCwsCB/pqfL1taWtgnw/+FhSUlJkW+vXJFvLl+WxMREGRkZ0XETtOln/Ptr16S2ttbVT3V1tXR2dhotkfn5ecnLy9N1X1+6JD9cvy6NjY1ycHBgzPh0qNhkjtMednZ2pK6uTiJv3lQb7DU/P1/W1tZ0nDhGR0flYVqafHf1qs758cYN6erqkpOTE51jIoC8zc1NSUhIkP7+fqPHGX19fVJRXu5TBYEVFhbK+Pi4HB0d6dfR0SGxMTGyurrqmxN1+7ZuhHH6/3j0SF5WVcnx8bHOMbG9vS2ZGRk+ZeOn7fVrJZQ90l5cXJTk5GSpqanRNh+/sYltfODrp8hImZmZUTuTk5OSk5OjbciATGxCMnZZg42WV690jDljY2Py861bGo8VAeQxIe3BA10YDDiEwGDY+PBBgzMJaGhokJKSEj+iJiYm5JfoaFWyFbQJEhKDYXBwUA+bDICw+Ph4tWkCX/hkv25YX1/XQx5+/97oCURzc7Pk5ubK4eGh0WMjD+aTkpKkt7fX6HEGAWVlZsrs7KzREwjz1H9LTVW7+/v7kvHkiV8aAoImeOqbFRzM82fPjJY7mIcP9vTfu3eqILOUmMBnsDK0srIiv8bGqsLcUF9fL0VFRX4H70cepEEewYLWlhYpLyvT31agJFLKSRWQQJ3gS713T+bm5rSfjROAnSSz30oq6UdJOEvZZAcpiqIBtp1Iot9Upx34IkV/v3/fNduoh3F37waUMh95LMQAl4UJN/IIKlgaAGoFSoiLi9P6Egp5HAopa09lK1B25YsXqmYz6IuQNzAwoDWRWugEbOMDX/i0wkcerOLAVB1wIs9UBbXmLCBxpI6dUNIWZXOr7u7uGj3+gJzSp09VdZsbG0avhJS2xNHd3a3EudU6bOMDX/YDAT7yIMlMN/sXHRWlxR+wMZ4owVRhgifEX9nZ8qatTdvnvTAI1k3ZqDI7K8sxoPNeGGTFP62tmhVucSwvL2sJY892xZnwq3l2OClvampK30VOqcEml5aWdHOMU0usz4TzPFVQRFlpaUB6AwLi9m5qanIMiLVnPVU40KrKSq3ZVtVaAfkxd+5IT0+P2nRDyOShCm4eO9hU+9u3+h5CrTw+CQLCrDjrkYyyucm5Ae0Ilh0m2dgK9khmntN6PuyznhR3Go+IiPD7RxWUPDtQR3FxsaMqPhd4LnBZ2JX9JSIk8jz4wyMvDHjkhQGPvDDgkXdhiHwEtQ88YulgtSEAAAAASUVORK5CYII=" InformativeScreenshot="81c1d342cb6ff85b159cbf4f8a768be4.png" IsNativeTextCaseSensitive="False" Reference="x53wdMOYU0i6wyj3bGLciw/eAAwgr_tM0OfFt_4SqSmmg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Upsell- Renewal - Net New Phase 2 FY21 - COVID UiPath Premium Plus | Salesforce' /&gt;" SearchSteps="Selector" Text="4/30/2022" TextMethod="AttributeText" />
                   </uix:NGetText.Target>
                   <uix:NGetText.Text>
-                    <OutArgument x:TypeArguments="x:String">[out_EndDate]</OutArgument>
+                    <OutArgument x:TypeArguments="x:String">[EndDate]</OutArgument>
                   </uix:NGetText.Text>
                 </uix:NGetText>
-                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;End date is: &quot;+out_EndDate]" />
+                <Assign sap:VirtualizedContainerService.HintSize="334,61" sap2010:WorkflowViewState.IdRef="Assign_3">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="s:DateTime">[out_EndDate]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="s:DateTime">[DateTime.ParseExact(EndDate,"MM/dd/yyyy",System.Globalization.CultureInfo.InvariantCulture)]</InArgument>
+                  </Assign.Value>
+                </Assign>
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;End date is: &quot;+out_EndDate.ToString]" />
               </Sequence>
             </ActivityAction>
           </uix:NApplicationCard.Body>
@@ -126,10 +137,10 @@
         </uix:NApplicationCard>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,352" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="438,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
@@ -137,7 +148,7 @@
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Exception Sequence" sap:VirtualizedContainerService.HintSize="376,283" sap2010:WorkflowViewState.IdRef="Sequence_8">
+            <Sequence DisplayName="Exception Sequence" sap:VirtualizedContainerService.HintSize="376,280" sap2010:WorkflowViewState.IdRef="Sequence_8">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
