@@ -8,7 +8,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1105,3433</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1105,3495</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Sharepoint_CreateSite_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -84,14 +84,14 @@
       <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Description: This workflow creates a private sharepoint site. &#xA;&#xA;Inputs:&#xA;Site Name&#xA;Site Description&#xA;&#xA;Outputs: &#xA;Site Address" DisplayName="Sharepoint_CreateSite" sap:VirtualizedContainerService.HintSize="878,3328" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Description: This workflow creates a private sharepoint site. &#xA;&#xA;Inputs:&#xA;Site Name&#xA;Site Description&#xA;&#xA;Outputs: &#xA;Site Address" DisplayName="Sharepoint_CreateSite" sap:VirtualizedContainerService.HintSize="878,3390" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="836,3104" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="836,3166" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -99,7 +99,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <Sequence sap:VirtualizedContainerService.HintSize="798,2855" sap2010:WorkflowViewState.IdRef="Sequence_5">
+        <Sequence sap:VirtualizedContainerService.HintSize="798,2917" sap2010:WorkflowViewState.IdRef="Sequence_5">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -120,18 +120,19 @@
             </If.Then>
           </If>
           <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="756,61" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[in_SiteName]" />
-          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="756,2283" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" Version="V1">
+          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="756,2345" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" Version="V1">
             <uix:NApplicationCard.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="722,2067" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="722,2129" sap2010:WorkflowViewState.IdRef="Sequence_2">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
+                  <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="680,22" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
                   <uix:NClick CursorMotionType="{x:Null}" ClickType="Single" DisplayName="Click Create Site" sap:VirtualizedContainerService.HintSize="680,166" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left">
                     <uix:NClick.Target>
                       <uix:TargetAnchorable BrowserURL="https://uipath.sharepoint.com/_layouts/15/sharepoint.aspx" ContentHash="weRL6b0W1k257fLUc4xfCw" DesignTimeRectangle="37, 128, 97, 38" ElementType="Text" FriendlyName="'Create site'" FullSelectorArgument="&lt;webctrl parentid='SPHomeNavBar' tag='SPAN' idx='2' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='SPHomeNavBar' tag='SPAN' type='' aaname='' check:text='Create site' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGUAAAAqCAYAAACqcpV2AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJhSURBVHhe7ZbBalNREIbzSLXLPoDYJ6jpA2i2YhctSLs0KD5AqFkIcZlduyr6AtW2i+5EKSKCiM9w7H/hD5PJ3JOSGu4If+AjOefMmTsz/5xz0+vtXxeRjD+/fxWRC4mSEImSEImSEImSEImSEImSEImSEImSEImSEImSEImSkJVEGZ6eNERr4v5IlIRIlISkEOXV8GXZfLAxA+PILiOXnz+Vfn+n+Y7WV6FTUb59/VJ2+48XRBi/HTVrdu5f8H7ybu2CQ5zB0yf3ir8zUX7++F72nj9rChWtrwOJsoS7BI812IyPR3PX2scPZ7OrbvvRw7mrA4XnGoAt5rE3msczcFo5X2sS6xt7sJcxIgYbF2C8bEA/30Yoys2tk4PptAwmk5Ct128aojWAvfAR+SZIAIEi4GgdsGA2CexjQTimHwAB6RNFtM/wJ4X+rUAsMG2Ib6Kri/Pmt9/j7fBseyNwzGdGpBfFFwlFtd2M/UeHL+5USC9KFANsrH8CX9ELfZkofgzw3Npp+S+uLybMLrNXBGHn4dvO21PlRcHY2pK2giEOXJew4fN8jD4vHw+pNWTnL3omF+ETBihY2x7M22R9gaKTUuvYNuCP194yUTDGSW4TIKIzUQCSQtf464J/iX3C3GO73xKdhNpJwbx9p9SADe1sQ/kYvSi09TnW6FQUwMLYo80EfMIE69aep8P7QofaAtl1Fhi+eSUB/2+OeLtajBAeNmwAHxeoNULnoohFJEpCJEpCVhJFrBeJkhCJkhCJkhCJkhCJkhCJkhCJkhCJkhCJkhCJkhCJkpBe0SfZp5S/rrEtsAP/oOUAAAAASUVORK5CYII=" InformativeScreenshot="044345784087d5af6cad0e6c3e11d50a.png" IsNativeTextCaseSensitive="False" Reference="x53wdMOYU0i6wyj3bGLciw/jJrZKtfW7EegmnrDBpwT6w" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SharePoint' /&gt;" SearchSteps="Selector" Text="Create site" TextMethod="AttributeText" />

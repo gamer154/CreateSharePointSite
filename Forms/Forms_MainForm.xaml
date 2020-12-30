@@ -170,7 +170,7 @@
       </ufa:FormActivity.FormFieldsCollection>
     </ufa:FormActivity>
     <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,61" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[wrikeRegion + vbCr + wrikeBucket]" />
-    <Flowchart sap2010:Annotation.AnnotationText="Description: Flowchart to evaluate the data which is entered and get SFDC end dates if they are not entered. " DisplayName="Evaluate Data and SFDC End Date" sap:VirtualizedContainerService.HintSize="334,123" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+    <Flowchart sap2010:Annotation.AnnotationText="Description: Flowchart to evaluate the data which is entered and get SFDC end dates if they are not entered. " DisplayName="Evaluate Data and SFDC End Date" sap:VirtualizedContainerService.HintSize="1192,893" sap2010:WorkflowViewState.IdRef="Flowchart_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -232,7 +232,9 @@
                     <OutArgument x:TypeArguments="x:String" x:Key="out_SFGetDateException">
                       <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="SFDCEDError" />
                     </OutArgument>
-                    <OutArgument x:TypeArguments="s:DateTime" x:Key="out_StartDate" />
+                    <OutArgument x:TypeArguments="s:DateTime" x:Key="out_StartDate">
+                      <mva:VisualBasicReference x:TypeArguments="s:DateTime" ExpressionText="PPSubStartDate" />
+                    </OutArgument>
                   </ui:InvokeWorkflowFile.Arguments>
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -262,17 +264,18 @@
                             <av:PointCollection x:Key="ConnectorLocation">110,695.5 110,725.5 440,725.5 440,423.5</av:PointCollection>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Salesforce_GetEndDate workflow" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Salesforce\Salesforce_GetEndDate.xaml">
+                        <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Salesforce_GetEndDate workflow" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Salesforce\Salesforce_GetEndDate.xaml">
                           <ui:InvokeWorkflowFile.Arguments>
                             <OutArgument x:TypeArguments="s:DateTime" x:Key="out_EndDate">
                               <mva:VisualBasicReference x:TypeArguments="s:DateTime" ExpressionText="dateTPlatform" />
                             </OutArgument>
                             <InArgument x:TypeArguments="x:String" x:Key="in_URL">
-                              <Literal x:TypeArguments="x:String">https://uipath.lightning.force.com/lightning/r/OpportunityLineItem/00k1Q00003c2HQjQAM/view</Literal>
+                              <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="linkSFDCPlatform" />
                             </InArgument>
                             <OutArgument x:TypeArguments="x:String" x:Key="out_SFGetDateException">
                               <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="SFDCEDError" />
                             </OutArgument>
+                            <OutArgument x:TypeArguments="s:DateTime" x:Key="out_StartDate" />
                           </ui:InvokeWorkflowFile.Arguments>
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -378,7 +381,7 @@
                 <av:Point x:Key="ShapeLocation">340.5,226.5</av:Point>
                 <av:Size x:Key="ShapeSize">79,87</av:Size>
                 <av:PointCollection x:Key="TrueConnector">340.5,270 300,270 300,374.5</av:PointCollection>
-                <av:PointCollection x:Key="FalseConnector">419.5,270 550,270</av:PointCollection>
+                <av:PointCollection x:Key="FalseConnector">419.5,270 449.5,270 449.5,260 640,260</av:PointCollection>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <FlowDecision.True>
@@ -387,7 +390,7 @@
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <av:Point x:Key="ShapeLocation">200,374.5</av:Point>
                     <av:Size x:Key="ShapeSize">200,51</av:Size>
-                    <av:PointCollection x:Key="ConnectorLocation">400,400 650,400 650,295.5</av:PointCollection>
+                    <av:PointCollection x:Key="ConnectorLocation">400,400 740,400 740,285.5</av:PointCollection>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
                 <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Salesforce_GetEndDate workflow" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Salesforce\Salesforce_GetEndDate.xaml">
@@ -415,11 +418,11 @@
                   <FlowStep x:Name="__ReferenceID7">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <av:Point x:Key="ShapeLocation">550,244.5</av:Point>
+                        <av:Point x:Key="ShapeLocation">640,234.5</av:Point>
                         <av:Size x:Key="ShapeSize">200,51</av:Size>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Wrike_CreateProject workflow" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Wrike\Wrike_CreateProject.xaml">
+                    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Wrike_CreateProject workflow" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Wrike\Wrike_CreateProject.xaml">
                       <ui:InvokeWorkflowFile.Arguments>
                         <InArgument x:TypeArguments="x:String" x:Key="in_AccountName">
                           <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="wrikeAcctName" />
@@ -437,7 +440,7 @@
                           <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="PPSubStartDate.ToString(&quot;dd/MM/yyyy&quot;)" />
                         </InArgument>
                         <InArgument x:TypeArguments="x:String" x:Key="in_PPSubEndDate">
-                          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="PPSubEndDate.ToString(&quot;dd/MM/yyyy&quot;)" />
+                          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="dateTPPRenewal.ToString(&quot;dd/MM/yyyy&quot;)" />
                         </InArgument>
                         <OutArgument x:TypeArguments="x:String" x:Key="out_WrikeURL">
                           <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="linkWrike" />

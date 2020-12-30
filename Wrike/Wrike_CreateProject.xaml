@@ -11,7 +11,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1105,2800</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1105,2862</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Wrike_CreateProject_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -86,28 +86,29 @@
       <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Description: Creates Wrike Project in Wrike. " DisplayName="Wrike_CreateProject" sap:VirtualizedContainerService.HintSize="514,2695" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Description: Creates Wrike Project in Wrike. " DisplayName="Wrike_CreateProject" sap:VirtualizedContainerService.HintSize="514,2757" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="472,2572" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="472,2634" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
-        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="434,2345" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" Version="V1">
+        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="434,2407" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" Version="V1">
           <uix:NApplicationCard.Body>
             <ActivityAction x:TypeArguments="x:Object">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,2089" sap2010:WorkflowViewState.IdRef="Sequence_2">
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,2151" sap2010:WorkflowViewState.IdRef="Sequence_2">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
                 <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Creating Wrike Project.&quot;]" />
+                <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
                 <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Enter Account Name" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,226" sap2010:WorkflowViewState.IdRef="NTypeInto_1" Text="[in_AccountName]">
                   <uix:NTypeInto.Target>
                     <uix:TargetAnchorable BrowserURL="https://www.wrike.com/workspace.htm?acc=901790&amp;wr=6#path=request-forms&amp;accountid=901790&amp;formid=297445&amp;query=new%20premium%20plus" ContentHash="bG7nUP_0nUukg7T2mTh-pQ" DesignTimeRectangle="288, 246, 608, 40" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl idx='1' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='' tag='INPUT' type='text' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAmQAAAAsCAYAAADLhaSUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEtSURBVHhe7daxbcUwEAVB91+bAhbCkDkNGl+CA6fyJjPACw7XwH5tAABSggwAIPYE2ZxzjzH2dV1mZmZm9uJOc532uj1Bdh5rrc8FAMBbTnOd9ro9QXZqDQCA//G7vQQZAEBAkAEAxAQZAEBMkAEAxAQZAEBMkAEAxAQZAEBMkAEAxAQZAEBMkAEAxAQZAEBMkAEAxAQZAEBMkAEAxAQZAEBMkAEAxAQZAEBMkAEAxAQZAEBMkAEAxAQZAEBMkAEAxAQZAEBMkAEAxAQZAEBMkAEAxAQZAEBMkAEAxAQZAEBMkAEAxAQZAEBMkAEAxAQZAEBMkAEAxAQZAEDszyAbY+y11ucCAOAtp7lOe92eIJtz/jxOrZmZmZnZezvNddrr9gQZAAANQQYAkNr7G51xMNEL9L+pAAAAAElFTkSuQmCC" InformativeScreenshot="66c6e0b350ede4b21ed7abacbdea06da.png" IsNativeTextCaseSensitive="False" Reference="x53wdMOYU0i6wyj3bGLciw/kY3F1O5900m27T2nZLwZJg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Request - Wrike' /&gt;" SearchSteps="Selector" />
