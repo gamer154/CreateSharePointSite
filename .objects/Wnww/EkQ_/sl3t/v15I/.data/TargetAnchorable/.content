@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-16"?>
+<TargetAnchorable BrowserURL="https://uipath.sharepoint.com/sites/TAM-shotest12?market=en-US&amp;Mode=Edit" ContentHash="PcG7_XUtlUu0_bdy1K082A" DesignTimeRectangle="228, 449, 68, 44" ElementType="Text" FriendlyName="'From a link'" FullSelectorArgument="&lt;webctrl parentname='From a link' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentname='From a link' tag='DIV' type='' aaname='From a link' check:text='From a link' /&gt;" IsNativeTextCaseSensitive="False" ScopeSelectorArgument="&lt;html app='chrome.exe' title='TAM - shotest1 - Home' /&gt;" SearchSteps="Selector" Text="From a link" TextMethod="AttributeText" xmlns="http://schemas.uipath.com/workflow/activities/uix">
+  <imageRef attrName="ImageBase64" xmlns="">0uif2dLhAIUqXJ4MsDJB2Tw</imageRef>
+  <imageRef attrName="InformativeScreenshot" originalValue="b4dc4d70f65379a98265cfaf99d129b3.png" xmlns="">0zUkHZtvKUE2yVqndOoWeEw</imageRef>
+</TargetAnchorable>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-16"?>
+<TargetAnchorable BrowserURL="https://uipath.sharepoint.com/sites/TAM-shotest12?market=en-US&amp;Mode=Edit" ContentHash="QFddZ0XdWkyqyk7eNBZ_xA" DesignTimeRectangle="1733, 1008, 80, 30" ElementType="Button" FriendlyName="'Insert'" FullSelectorArgument="&lt;webctrl aaname='Insert' idx='2' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Insert' check:text='Insert' tag='BUTTON' type='button' /&gt;" IsNativeTextCaseSensitive="False" ScopeSelectorArgument="&lt;html app='chrome.exe' title='TAM - shotest1 - Home' /&gt;" SearchSteps="Selector" Text="Insert" TextMethod="AttributeText" xmlns="http://schemas.uipath.com/workflow/activities/uix">
+  <imageRef attrName="ImageBase64" xmlns="">07JQ2LjJeFUSw0AzzjtcGFA</imageRef>
+  <imageRef attrName="InformativeScreenshot" originalValue="ba13fde011b85466aa9bb7f6e09f4f67.png" xmlns="">0gu_cEII5skC3MZFiWQOIaQ</imageRef>
+</TargetAnchorable>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-16"?>
+<TargetAnchorable BrowserURL="https://uipath.sharepoint.com/sites/TAM-shotest12?market=en-US&amp;Mode=Edit" ContentHash="X6xH3yeOak6EOrcxqgt7LQ" DesignTimeRectangle="1609, 320, 298, 30" ElementType="InputBox" FriendlyName="'Google'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='text' aaname='Title' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' aaname='Title' /&gt;" IsNativeTextCaseSensitive="False" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*- Home' /&gt;" SearchSteps="Selector" Text="Google" TextMethod="AttributeText" xmlns="http://schemas.uipath.com/workflow/activities/uix">
+  <imageRef attrName="ImageBase64" xmlns="">03y5kvF4d20OM67tLWocGgQ</imageRef>
+  <imageRef attrName="InformativeScreenshot" originalValue="fc6b4b5069ac014f321a3d1d67c71e73.png" xmlns="">00YAantT1v0e6dKhXaQ3qtQ</imageRef>
+</TargetAnchorable>

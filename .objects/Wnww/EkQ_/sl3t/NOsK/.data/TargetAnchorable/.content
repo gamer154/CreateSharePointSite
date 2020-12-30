@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-16"?>
+<TargetAnchorable BrowserURL="https://uipath.sharepoint.com/sites/TAM-shotest12?market=en-US&amp;Mode=Edit" ContentHash="2MDFU1KXgk-rznTRlstonw" DesignTimeRectangle="348, 372, 57, 14" ElementType="Text" FriendlyName="'Add links'" FullSelectorArgument="&lt;webctrl tag='SPAN' aaname='Add links' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SPAN' aaname='Add links' type='' check:text='Add links' /&gt;" IsNativeTextCaseSensitive="False" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*- Home' /&gt;" SearchSteps="Selector" Text="Add links" TextMethod="AttributeText" xmlns="http://schemas.uipath.com/workflow/activities/uix">
+  <imageRef attrName="ImageBase64" xmlns="">01xPoDJgPZ02HU3bpXnNHJg</imageRef>
+  <imageRef attrName="InformativeScreenshot" originalValue="ac57af5008a70892f58d1d599b29861b.png" xmlns="">0TdI52GJ3-EmUfgryHaTKZQ</imageRef>
+</TargetAnchorable>

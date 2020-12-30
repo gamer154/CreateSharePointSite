@@ -1,0 +1,13 @@
+﻿{
+  "Id": "-eNkEwDcNEKpziGfi41C0Q",
+  "Reference": "x53wdMOYU0i6wyj3bGLciw/-eNkEwDcNEKpziGfi41C0Q",
+  "ParentRef": "x53wdMOYU0i6wyj3bGLciw/sl3t0bEo0kCgiQYedkuMHg",
+  "Name": "CloseQuickLink",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Created": "2020-12-30T16:43:08.0425306Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=20.10.4.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2020-12-30T16:43:08.0425306Z"
+}

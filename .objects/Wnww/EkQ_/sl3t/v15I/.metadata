@@ -1,0 +1,13 @@
+﻿{
+  "Id": "v15IU9XO30il4EmR75pLtQ",
+  "Reference": "x53wdMOYU0i6wyj3bGLciw/v15IU9XO30il4EmR75pLtQ",
+  "ParentRef": "x53wdMOYU0i6wyj3bGLciw/sl3t0bEo0kCgiQYedkuMHg",
+  "Name": "From a link",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Created": "2020-12-30T16:32:12.392208Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=20.10.4.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2020-12-30T16:32:12.392208Z"
+}

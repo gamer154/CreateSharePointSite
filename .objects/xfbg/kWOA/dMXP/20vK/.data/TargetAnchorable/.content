@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-16"?>
+<TargetAnchorable BrowserURL="https://www.wrike.com/workspace.htm?acc=901790&amp;wr=6#path=folder&amp;id=579584591&amp;c=list&amp;p=466308495&amp;a=901790&amp;so=10&amp;bso=10&amp;sd=0&amp;f=&amp;st=space-466307544&amp;sfi=1" ContentHash="gsLNKqAeeESZs90_4xqr2A" DesignTimeRectangle="1125, 177, 70, 18" FriendlyName="'Customers'" FullSelectorArgument="&lt;webctrl aaname='Customers' parentid='ext-comp-1030' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Customers' parentid='ext-comp-1030' tag='DIV' type='' check:text='Customers' /&gt;" IsNativeTextCaseSensitive="False" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*- Wrike' /&gt;" SearchSteps="Selector" Text="Customers" TextMethod="AttributeText" xmlns="http://schemas.uipath.com/workflow/activities/uix">
+  <imageRef attrName="ImageBase64" xmlns="">07wOCeczJuk25_u3tf47jVQ</imageRef>
+  <imageRef attrName="InformativeScreenshot" originalValue="d93c9522278d32ef7fd10233a0e8455f.png" xmlns="">0srs6wtsxmk6AJ9dTIlLjvA</imageRef>
+</TargetAnchorable>
