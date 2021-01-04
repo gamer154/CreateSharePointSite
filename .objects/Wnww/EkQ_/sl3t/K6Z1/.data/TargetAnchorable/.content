@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-16"?>
-<TargetAnchorable BrowserURL="https://uipath.sharepoint.com/sites/TAM-shotest179?Mode=Edit" ContentHash="pldECXQItECiut4uS691aA" DesignTimeRectangle="306, 281, 812, 560" FriendlyName="'DIV'" FullSelectorArgument="&lt;webctrl idx='1' parentid='416a4c58-61fc-4166-aa19-1099fad50545' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='416a4c58-61fc-4166-aa19-1099fad50545' tag='DIV' aaname='' /&gt;" IsNativeTextCaseSensitive="False" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*- Home' /&gt;" SearchSteps="Selector" xmlns="http://schemas.uipath.com/workflow/activities/uix">
+<TargetAnchorable BrowserURL="https://uipath.sharepoint.com/sites/TAM-shotest179?Mode=Edit" ContentHash="ZA-cGLDwq0eYAHkZd8NW3Q" DesignTimeRectangle="306, 281, 812, 560" FriendlyName="'DIV'" FullSelectorArgument="&lt;webctrl idx='1' parentid='416a4c58-61fc-4166-aa19-1099fad50545' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='416a4c58-61fc-4166-aa19-1099fad50545' tag='DIV' aaname='' /&gt;" IsNativeTextCaseSensitive="False" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*- Home' /&gt;" SearchSteps="Selector" xmlns="http://schemas.uipath.com/workflow/activities/uix">
   <TargetAnchorable.PointOffset>
     <PointOffset Position="TopLeft" X="405" Y="49" />
   </TargetAnchorable.PointOffset>
-  <imageRef attrName="ImageBase64" xmlns="">0BWlie7uqhkScJrLM3hR3UA</imageRef>
-  <imageRef attrName="InformativeScreenshot" originalValue="4f16594e7eeb62de85aa1413e4e85536.png" xmlns="">0QYw8aOf6NEqCf49IZFXnqA</imageRef>
+  <imageRef attrName="ImageBase64" xmlns="">05AZXVyghMUaClk27XkuDFg</imageRef>
+  <imageRef attrName="InformativeScreenshot" originalValue="da33917104beb9cda2a69addc62a8188.png" xmlns="">0IQVtKNV_l0u5E2w7CjP7DQ</imageRef>
 </TargetAnchorable>
