@@ -1,0 +1,16 @@
+﻿{
+  "Id": "K6Z1iQtfz0OBvItWbJIgvg",
+  "Reference": "x53wdMOYU0i6wyj3bGLciw/K6Z1iQtfz0OBvItWbJIgvg",
+  "ParentRef": "x53wdMOYU0i6wyj3bGLciw/sl3t0bEo0kCgiQYedkuMHg",
+  "Name": "NewDocuments",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Created": "2021-01-04T14:21:40.7991492Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=20.10.4.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2021-01-04T14:32:53.5230595Z",
+  "UpdatedBy": [
+    "UiPath.Platform, Version=20.10.4.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

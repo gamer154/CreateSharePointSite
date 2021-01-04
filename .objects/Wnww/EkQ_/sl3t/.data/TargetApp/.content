@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-16"?>
-<TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" ContentHash="0q5b-juXkU23adiVbu57pA" Reference="x53wdMOYU0i6wyj3bGLciw/sl3t0bEo0kCgiQYedkuMHg" Selector="&lt;html app='chrome.exe' title='*- Home' /&gt;" xmlns="http://schemas.uipath.com/workflow/activities/uix">
-  <imageRef attrName="IconBase64" xmlns="">0Asko3K1lE0qYSIvonG14gA</imageRef>
-  <imageRef attrName="InformativeScreenshot" originalValue="07ac77cbf5cecf780ca634f7585b0cb9.png" xmlns="">0sA7RWjGTXE2mBsj34EwjCA</imageRef>
+<TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" ContentHash="8nfzyDLZOECGo2bxXMpNVQ" Reference="x53wdMOYU0i6wyj3bGLciw/sl3t0bEo0kCgiQYedkuMHg" Selector="&lt;html app='chrome.exe' title='*- Home' /&gt;" xmlns="http://schemas.uipath.com/workflow/activities/uix">
+  <imageRef attrName="IconBase64" xmlns="">0cRqxND-m_0KYxgC-x8CEDg</imageRef>
+  <imageRef attrName="InformativeScreenshot" originalValue="07ac77cbf5cecf780ca634f7585b0cb9.png" xmlns="">0XcJDYAAuI0iRG0hoR6f38w</imageRef>
 </TargetApp>

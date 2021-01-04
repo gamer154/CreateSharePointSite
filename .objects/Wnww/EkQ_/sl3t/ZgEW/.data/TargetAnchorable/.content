@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-16"?>
+<TargetAnchorable BrowserURL="https://uipath.sharepoint.com/sites/TAM-shotest179?Mode=Edit" ContentHash="27UZQ72kLkuMiYu3W_yV7Q" DesignTimeRectangle="306, 353, 812, 677" FriendlyName="'DIV'" FullSelectorArgument="&lt;webctrl idx='1' parentid='f2a8650b-5ea0-4ac2-9cde-56e0fd0279b0' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='f2a8650b-5ea0-4ac2-9cde-56e0fd0279b0' tag='DIV' aaname='' /&gt;" IsNativeTextCaseSensitive="False" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*- Home' /&gt;" SearchSteps="Selector" xmlns="http://schemas.uipath.com/workflow/activities/uix">
+  <imageRef attrName="ImageBase64" xmlns="">09Nsd2IKsjEaA2-ZL2GDKLA</imageRef>
+  <imageRef attrName="InformativeScreenshot" originalValue="bd027a93d0093d1526d6e171b9bce2ac.png" xmlns="">0UlH2LSqzFkqKU7-QZ2iBkA</imageRef>
+</TargetAnchorable>

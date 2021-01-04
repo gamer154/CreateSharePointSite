@@ -1,0 +1,13 @@
+﻿{
+  "Id": "ZgEWyCzQ5UG47RKfr80kiA",
+  "Reference": "x53wdMOYU0i6wyj3bGLciw/ZgEWyCzQ5UG47RKfr80kiA",
+  "ParentRef": "x53wdMOYU0i6wyj3bGLciw/sl3t0bEo0kCgiQYedkuMHg",
+  "Name": "Activity",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Created": "2021-01-04T14:21:40.7001493Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=20.10.4.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2021-01-04T14:21:40.7001493Z"
+}

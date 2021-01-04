@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-16"?>
+<TargetAnchorable BrowserURL="https://uipath.sharepoint.com/sites/TAM-shotest179?Mode=Edit" ContentHash="X3QFegxWR0-TxqppEeM61A" DesignTimeRectangle="276, 363, 34, 34" ElementType="Button" FriendlyName="'BUTTON'" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='button' aria-label='Edit web part' idx='2' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='button' aria-label='Edit web part' aaname='' /&gt;" IsNativeTextCaseSensitive="False" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*- Home' /&gt;" SearchSteps="Selector" xmlns="http://schemas.uipath.com/workflow/activities/uix">
+  <imageRef attrName="ImageBase64" xmlns="">0dXQ-i79Re0-YNxodlWrvDw</imageRef>
+  <imageRef attrName="InformativeScreenshot" originalValue="0245adc06b78983b8b0ae64bdb012aa0.png" xmlns="">0XFY8XN2AKkKCW0wyOxifVw</imageRef>
+</TargetAnchorable>

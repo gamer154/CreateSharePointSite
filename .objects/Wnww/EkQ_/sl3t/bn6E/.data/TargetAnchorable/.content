@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-16"?>
+<TargetAnchorable BrowserURL="https://uipath.sharepoint.com/sites/TAM-shotest179?Mode=Edit" ContentHash="82X2_qbFC0Ckl6nMAu54BQ" DesignTimeRectangle="1609, 271, 298, 30" ElementType="InputBox" FriendlyName="'9'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' aaname='Show up to this many items at a time' /&gt;" IsNativeTextCaseSensitive="False" ScopeSelectorArgument="&lt;html app='chrome.exe' title='TAM - shotest1 - Home' /&gt;" SearchSteps="Selector, FuzzySelector" Text="9" TextMethod="AttributeText" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TargetAnchorable.Anchors>
+    <scg:List x:TypeArguments="ITarget" Capacity="4">
+      <Target DesignTimeRectangle="1608, 241, 300, 29" ElementType="Text" FriendlyName="'Show up'" FullSelectorArgument="&lt;webctrl id='TextFieldLabel384' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='TextFieldLabel384' tag='LABEL' type='' aaname='Show up to this many items at a time' check:text='Show up to this many items at a time' /&gt;" IsNativeTextCaseSensitive="False" SearchSteps="FuzzySelector" Text="Show up to this many items at a time" TextMethod="AttributeText">
+        <imageRef attrName="ImageBase64" xmlns="">1Hg1bbu7SkkK3L61kv006vw</imageRef>
+      </Target>
+    </scg:List>
+  </TargetAnchorable.Anchors>
+  <imageRef attrName="ImageBase64" xmlns="">0t-_N8MKQ3EGpYWinsbFs3w</imageRef>
+  <imageRef attrName="InformativeScreenshot" originalValue="3c8635874295187119e8aea530bc01a2.png" xmlns="">0o0CQGdrYs0CiYD73MDKexw</imageRef>
+</TargetAnchorable>
